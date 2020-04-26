@@ -1,4 +1,4 @@
-@extends('user.master')
+@extends('user.master1')
 @section('title','Wordpress Hosting')
 @section('content')
     <section

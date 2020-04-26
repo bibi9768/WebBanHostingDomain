@@ -72,8 +72,8 @@
                     </div>
                     <div class="col-lg-3 col-md-12">
                         <div class="footer-box footer-pay-wrap">
-                            <i class="icon-visa-pay-logo pay-icon"></i>
-                            <i class="icon-master-card-logo pay-icon"></i>
+{{--                            <i class="icon-visa-pay-logo pay-icon"></i>--}}
+{{--                            <i class="icon-master-card-logo pay-icon"></i>--}}
                             <i class="icon-paypal-logo pay-icon"></i>
                         </div>
                     </div>

@@ -120,22 +120,22 @@
                                                                                                     </div>
                                                                                                 </a>
                                                                                             </li>
-                                                                                            <li>
-                                                                                                <a href="https://manage.hostvn.net/cart.php?type=domain">
-                                                                                                    <i class="icon-transfer"></i>
-                                                                                                    <div
-                                                                                                        class="menu-text">
-                                                                                                        <h3>Chuyển đổi
-                                                                                                            tên
-                                                                                                            miền </h3>
-                                                                                                        <br>
-                                                                                                        Giảm ngay 20%
-                                                                                                        khi chuyển tên
-                                                                                                        miền về
-                                                                                                        HTVIETNAM
-                                                                                                    </div>
-                                                                                                </a>
-                                                                                            </li>
+{{--                                                                                            <li>--}}
+{{--                                                                                                <a href="https://manage.hostvn.net/cart.php?type=domain">--}}
+{{--                                                                                                    <i class="icon-transfer"></i>--}}
+{{--                                                                                                    <div--}}
+{{--                                                                                                        class="menu-text">--}}
+{{--                                                                                                        <h3>Chuyển đổi--}}
+{{--                                                                                                            tên--}}
+{{--                                                                                                            miền </h3>--}}
+{{--                                                                                                        <br>--}}
+{{--                                                                                                        Giảm ngay 20%--}}
+{{--                                                                                                        khi chuyển tên--}}
+{{--                                                                                                        miền về--}}
+{{--                                                                                                        HTVIETNAM--}}
+{{--                                                                                                    </div>--}}
+{{--                                                                                                </a>--}}
+{{--                                                                                            </li>--}}
                                                                                         </ul>
                                                                                     </div>
                                                                                     <div class="col-md-6 hosta-col">
@@ -156,50 +156,50 @@
                                                                                                     </div>
                                                                                                 </a>
                                                                                             </li>
-                                                                                            <li>
-                                                                                                <a href="https://kb.hostvn.net/ten-mien-1/">
-                                                                                                    <i class="icon-idea"></i>
-                                                                                                    <div
-                                                                                                        class="menu-text">
-                                                                                                        <h3>Hướng dẫn sử
-                                                                                                            dụng tên
-                                                                                                            miền </h3>
-                                                                                                        <br>
-                                                                                                        Tài liệu hướng
-                                                                                                        dẫn sử dụng tên
-                                                                                                        miền
-                                                                                                    </div>
-                                                                                                </a>
-                                                                                            </li>
-                                                                                            <li>
-                                                                                                <a href="https://blog.hostvn.net/chia-se/7-tieu-chi-de-lua-chon-ten-mien-dep-nhat.html">
-                                                                                                    <i class="icon-help"></i>
-                                                                                                    <div
-                                                                                                        class="menu-text">
-                                                                                                        <h3>Tư vấn chọn
-                                                                                                            tên
-                                                                                                            miền </h3>
-                                                                                                        <br>
-                                                                                                        Chia sẻ kinh
-                                                                                                        nghiệm chọn tên
-                                                                                                        miền
-                                                                                                    </div>
-                                                                                                </a>
-                                                                                            </li>
-                                                                                            <li>
-                                                                                                <a href="ten-mien/thoa-thuan-dang-ky-ten-mien/index.html">
-                                                                                                    <i class="icon-law"></i>
-                                                                                                    <div
-                                                                                                        class="menu-text">
-                                                                                                        <h3>Quy định sử
-                                                                                                            dụng </h3>
-                                                                                                        <br>
-                                                                                                        Những quy định
-                                                                                                        cần biết khi sử
-                                                                                                        dụng tên miền
-                                                                                                    </div>
-                                                                                                </a>
-                                                                                            </li>
+{{--                                                                                            <li>--}}
+{{--                                                                                                <a href="https://kb.hostvn.net/ten-mien-1/">--}}
+{{--                                                                                                    <i class="icon-idea"></i>--}}
+{{--                                                                                                    <div--}}
+{{--                                                                                                        class="menu-text">--}}
+{{--                                                                                                        <h3>Hướng dẫn sử--}}
+{{--                                                                                                            dụng tên--}}
+{{--                                                                                                            miền </h3>--}}
+{{--                                                                                                        <br>--}}
+{{--                                                                                                        Tài liệu hướng--}}
+{{--                                                                                                        dẫn sử dụng tên--}}
+{{--                                                                                                        miền--}}
+{{--                                                                                                    </div>--}}
+{{--                                                                                                </a>--}}
+{{--                                                                                            </li>--}}
+{{--                                                                                            <li>--}}
+{{--                                                                                                <a href="https://blog.hostvn.net/chia-se/7-tieu-chi-de-lua-chon-ten-mien-dep-nhat.html">--}}
+{{--                                                                                                    <i class="icon-help"></i>--}}
+{{--                                                                                                    <div--}}
+{{--                                                                                                        class="menu-text">--}}
+{{--                                                                                                        <h3>Tư vấn chọn--}}
+{{--                                                                                                            tên--}}
+{{--                                                                                                            miền </h3>--}}
+{{--                                                                                                        <br>--}}
+{{--                                                                                                        Chia sẻ kinh--}}
+{{--                                                                                                        nghiệm chọn tên--}}
+{{--                                                                                                        miền--}}
+{{--                                                                                                    </div>--}}
+{{--                                                                                                </a>--}}
+{{--                                                                                            </li>--}}
+{{--                                                                                            <li>--}}
+{{--                                                                                                <a href="ten-mien/thoa-thuan-dang-ky-ten-mien/index.html">--}}
+{{--                                                                                                    <i class="icon-law"></i>--}}
+{{--                                                                                                    <div--}}
+{{--                                                                                                        class="menu-text">--}}
+{{--                                                                                                        <h3>Quy định sử--}}
+{{--                                                                                                            dụng </h3>--}}
+{{--                                                                                                        <br>--}}
+{{--                                                                                                        Những quy định--}}
+{{--                                                                                                        cần biết khi sử--}}
+{{--                                                                                                        dụng tên miền--}}
+{{--                                                                                                    </div>--}}
+{{--                                                                                                </a>--}}
+{{--                                                                                            </li>--}}
                                                                                         </ul>
                                                                                     </div>
                                                                                 </div>
@@ -285,107 +285,107 @@
                                                                                                     </div>
                                                                                                 </a>
                                                                                             </li>
-                                                                                            <li>
-                                                                                                <a href="transfer/hosting-migration.html">
-                                                                                                    <i class="icon-transfer"></i>
-                                                                                                    <div
-                                                                                                        class="menu-text">
-                                                                                                        <h3>Chuyển
-                                                                                                            Hosting về
-                                                                                                            HTVIETNAM </h3>
-                                                                                                        <br>
-                                                                                                        Giảm ngay 20%
-                                                                                                        khi chuyển
-                                                                                                        Hosting về
-                                                                                                        HTVIETNAM
-                                                                                                    </div>
-                                                                                                </a>
-                                                                                            </li>
+{{--                                                                                            <li>--}}
+{{--                                                                                                <a href="transfer/hosting-migration.html">--}}
+{{--                                                                                                    <i class="icon-transfer"></i>--}}
+{{--                                                                                                    <div--}}
+{{--                                                                                                        class="menu-text">--}}
+{{--                                                                                                        <h3>Chuyển--}}
+{{--                                                                                                            Hosting về--}}
+{{--                                                                                                            HTVIETNAM </h3>--}}
+{{--                                                                                                        <br>--}}
+{{--                                                                                                        Giảm ngay 20%--}}
+{{--                                                                                                        khi chuyển--}}
+{{--                                                                                                        Hosting về--}}
+{{--                                                                                                        HTVIETNAM--}}
+{{--                                                                                                    </div>--}}
+{{--                                                                                                </a>--}}
+{{--                                                                                            </li>--}}
                                                                                         </ul>
                                                                                     </div>
-                                                                                    <div class="col-md-6 hosta-col">
-                                                                                        <h2>Reseller Hosting</h2>
-                                                                                        <ul>
-                                                                                            <li>
-                                                                                                <a href="reseller-hosting/reseller-hosting-ssd/index.html">
-                                                                                                    <i class="icon-server-1"></i>
-                                                                                                    <div
-                                                                                                        class="menu-text">
-                                                                                                        <h3>Reseller
-                                                                                                            Hosting
-                                                                                                            <span
-                                                                                                                class="label-spotlight">SSD</span>
-                                                                                                        </h3>
-                                                                                                        <br>
-                                                                                                        Nhanh hơn với
-                                                                                                        100% ổ SSD
-                                                                                                        Enterprise
-                                                                                                    </div>
-                                                                                                </a>
-                                                                                            </li>
-                                                                                            <li>
-                                                                                                <a href="reseller-hosting/reseller-linux/index.html">
-                                                                                                    <i class="icon-linux"></i>
-                                                                                                    <div
-                                                                                                        class="menu-text">
-                                                                                                        <h3>Reseller
-                                                                                                            Linux
-                                                                                                            (cPanel) </h3>
-                                                                                                        <br>
-                                                                                                        Tự khởi tạo và
-                                                                                                        quản lý Hosting
-                                                                                                        với cPanel
-                                                                                                    </div>
-                                                                                                </a>
-                                                                                            </li>
-                                                                                            <li>
-                                                                                                <a href="reseller-hosting/reseller-windows/index.html">
-                                                                                                    <i class="icon-windows-8"></i>
-                                                                                                    <div
-                                                                                                        class="menu-text">
-                                                                                                        <h3>Reseller
-                                                                                                            Windows
-                                                                                                            (Plesk) </h3>
-                                                                                                        <br>
-                                                                                                        Khởi tạo và quản
-                                                                                                        lý tài khoản
-                                                                                                        Hosting với
-                                                                                                        Plesk
-                                                                                                    </div>
-                                                                                                </a>
-                                                                                            </li>
-                                                                                            <li>
-                                                                                                <a href="reseller-hosting/reseller-gia-re/index.html">
-                                                                                                    <i class="icon-server-1"></i>
-                                                                                                    <div
-                                                                                                        class="menu-text">
-                                                                                                        <h3>Reseller Giá
-                                                                                                            Rẻ
-                                                                                                            (DirectAdmin) </h3>
-                                                                                                        <br>
-                                                                                                        Khởi tạo và quản
-                                                                                                        lý Hosting với
-                                                                                                        DirectAdmin
-                                                                                                    </div>
-                                                                                                </a>
-                                                                                            </li>
-                                                                                            <li>
-                                                                                                <a href="https://kb.hostvn.net/web-hosting-2/">
-                                                                                                    <i class="icon-idea"></i>
-                                                                                                    <div
-                                                                                                        class="menu-text">
-                                                                                                        <h3>Hướng dẫn sử
-                                                                                                            dụng Web
-                                                                                                            Hosting </h3>
-                                                                                                        <br>
-                                                                                                        Những điều cần
-                                                                                                        biết khi sử dụng
-                                                                                                        Hosting
-                                                                                                    </div>
-                                                                                                </a>
-                                                                                            </li>
-                                                                                        </ul>
-                                                                                    </div>
+{{--                                                                                    <div class="col-md-6 hosta-col">--}}
+{{--                                                                                        <h2>Reseller Hosting</h2>--}}
+{{--                                                                                        <ul>--}}
+{{--                                                                                            <li>--}}
+{{--                                                                                                <a href="reseller-hosting/reseller-hosting-ssd/index.html">--}}
+{{--                                                                                                    <i class="icon-server-1"></i>--}}
+{{--                                                                                                    <div--}}
+{{--                                                                                                        class="menu-text">--}}
+{{--                                                                                                        <h3>Reseller--}}
+{{--                                                                                                            Hosting--}}
+{{--                                                                                                            <span--}}
+{{--                                                                                                                class="label-spotlight">SSD</span>--}}
+{{--                                                                                                        </h3>--}}
+{{--                                                                                                        <br>--}}
+{{--                                                                                                        Nhanh hơn với--}}
+{{--                                                                                                        100% ổ SSD--}}
+{{--                                                                                                        Enterprise--}}
+{{--                                                                                                    </div>--}}
+{{--                                                                                                </a>--}}
+{{--                                                                                            </li>--}}
+{{--                                                                                            <li>--}}
+{{--                                                                                                <a href="reseller-hosting/reseller-linux/index.html">--}}
+{{--                                                                                                    <i class="icon-linux"></i>--}}
+{{--                                                                                                    <div--}}
+{{--                                                                                                        class="menu-text">--}}
+{{--                                                                                                        <h3>Reseller--}}
+{{--                                                                                                            Linux--}}
+{{--                                                                                                            (cPanel) </h3>--}}
+{{--                                                                                                        <br>--}}
+{{--                                                                                                        Tự khởi tạo và--}}
+{{--                                                                                                        quản lý Hosting--}}
+{{--                                                                                                        với cPanel--}}
+{{--                                                                                                    </div>--}}
+{{--                                                                                                </a>--}}
+{{--                                                                                            </li>--}}
+{{--                                                                                            <li>--}}
+{{--                                                                                                <a href="reseller-hosting/reseller-windows/index.html">--}}
+{{--                                                                                                    <i class="icon-windows-8"></i>--}}
+{{--                                                                                                    <div--}}
+{{--                                                                                                        class="menu-text">--}}
+{{--                                                                                                        <h3>Reseller--}}
+{{--                                                                                                            Windows--}}
+{{--                                                                                                            (Plesk) </h3>--}}
+{{--                                                                                                        <br>--}}
+{{--                                                                                                        Khởi tạo và quản--}}
+{{--                                                                                                        lý tài khoản--}}
+{{--                                                                                                        Hosting với--}}
+{{--                                                                                                        Plesk--}}
+{{--                                                                                                    </div>--}}
+{{--                                                                                                </a>--}}
+{{--                                                                                            </li>--}}
+{{--                                                                                            <li>--}}
+{{--                                                                                                <a href="reseller-hosting/reseller-gia-re/index.html">--}}
+{{--                                                                                                    <i class="icon-server-1"></i>--}}
+{{--                                                                                                    <div--}}
+{{--                                                                                                        class="menu-text">--}}
+{{--                                                                                                        <h3>Reseller Giá--}}
+{{--                                                                                                            Rẻ--}}
+{{--                                                                                                            (DirectAdmin) </h3>--}}
+{{--                                                                                                        <br>--}}
+{{--                                                                                                        Khởi tạo và quản--}}
+{{--                                                                                                        lý Hosting với--}}
+{{--                                                                                                        DirectAdmin--}}
+{{--                                                                                                    </div>--}}
+{{--                                                                                                </a>--}}
+{{--                                                                                            </li>--}}
+{{--                                                                                            <li>--}}
+{{--                                                                                                <a href="https://kb.hostvn.net/web-hosting-2/">--}}
+{{--                                                                                                    <i class="icon-idea"></i>--}}
+{{--                                                                                                    <div--}}
+{{--                                                                                                        class="menu-text">--}}
+{{--                                                                                                        <h3>Hướng dẫn sử--}}
+{{--                                                                                                            dụng Web--}}
+{{--                                                                                                            Hosting </h3>--}}
+{{--                                                                                                        <br>--}}
+{{--                                                                                                        Những điều cần--}}
+{{--                                                                                                        biết khi sử dụng--}}
+{{--                                                                                                        Hosting--}}
+{{--                                                                                                    </div>--}}
+{{--                                                                                                </a>--}}
+{{--                                                                                            </li>--}}
+{{--                                                                                        </ul>--}}
+{{--                                                                                    </div>--}}
                                                                                 </div>
                                                                             </div>
                                                                         </div>
@@ -835,39 +835,39 @@
                                                                 <a href="web-hosting/hosting-windows/index.html"><i
                                                                         class="icon-windows-8"></i>Hosting Windows </a>
                                                             </li>
-                                                            <li>
-                                                                <a href="web-hosting/hosting-gia-re/index.html"><i
-                                                                        class="icon-list"></i>Hosting Giá Rẻ </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="transfer/hosting-migration.html"><i
-                                                                        class="icon-transfer"></i>Chuyển Hosting về
-                                                                    HTVIETNAM </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="reseller-hosting/reseller-hosting-ssd/index.html"><i
-                                                                        class="icon-server-1"></i>Reseller Hosting </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="reseller-hosting/reseller-linux/index.html"><i
-                                                                        class="icon-linux"></i>Reseller Linux (cPanel)
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="reseller-hosting/reseller-windows/index.html"><i
-                                                                        class="icon-windows-8"></i>Reseller Windows
-                                                                    (Plesk) </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="reseller-hosting/reseller-gia-re/index.html"><i
-                                                                        class="icon-server-1"></i>Reseller Giá Rẻ
-                                                                    (DirectAdmin) </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="https://kb.hostvn.net/web-hosting-2/"><i
-                                                                        class="icon-idea"></i>Hướng dẫn sử dụng Web
-                                                                    Hosting </a>
-                                                            </li>
+{{--                                                            <li>--}}
+{{--                                                                <a href="web-hosting/hosting-gia-re/index.html"><i--}}
+{{--                                                                        class="icon-list"></i>Hosting Giá Rẻ </a>--}}
+{{--                                                            </li>--}}
+{{--                                                            <li>--}}
+{{--                                                                <a href="transfer/hosting-migration.html"><i--}}
+{{--                                                                        class="icon-transfer"></i>Chuyển Hosting về--}}
+{{--                                                                    HTVIETNAM </a>--}}
+{{--                                                            </li>--}}
+{{--                                                            <li>--}}
+{{--                                                                <a href="reseller-hosting/reseller-hosting-ssd/index.html"><i--}}
+{{--                                                                        class="icon-server-1"></i>Reseller Hosting </a>--}}
+{{--                                                            </li>--}}
+{{--                                                            <li>--}}
+{{--                                                                <a href="reseller-hosting/reseller-linux/index.html"><i--}}
+{{--                                                                        class="icon-linux"></i>Reseller Linux (cPanel)--}}
+{{--                                                                </a>--}}
+{{--                                                            </li>--}}
+{{--                                                            <li>--}}
+{{--                                                                <a href="reseller-hosting/reseller-windows/index.html"><i--}}
+{{--                                                                        class="icon-windows-8"></i>Reseller Windows--}}
+{{--                                                                    (Plesk) </a>--}}
+{{--                                                            </li>--}}
+{{--                                                            <li>--}}
+{{--                                                                <a href="reseller-hosting/reseller-gia-re/index.html"><i--}}
+{{--                                                                        class="icon-server-1"></i>Reseller Giá Rẻ--}}
+{{--                                                                    (DirectAdmin) </a>--}}
+{{--                                                            </li>--}}
+{{--                                                            <li>--}}
+{{--                                                                <a href="https://kb.hostvn.net/web-hosting-2/"><i--}}
+{{--                                                                        class="icon-idea"></i>Hướng dẫn sử dụng Web--}}
+{{--                                                                    Hosting </a>--}}
+{{--                                                            </li>--}}
                                                         </ul>
                                                     </li>
                                                     <li>
@@ -1029,99 +1029,99 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="top-option-wrap desktop">
-                                        {{--                                        <div class="container">--}}
-                                        {{--                                            <div class="row">--}}
-                                        {{--                                                <div class="col-lg-10">--}}
-                                        {{--                                                    <div class="domain-search-box" ng-init="domain=''">--}}
-                                        {{--                                                        <input type="text" placeholder="" ng-model="domain" value=""--}}
-                                        {{--                                                               my-enter="domainChecker()">--}}
-                                        {{--                                                        <button type="button" class="button ripple-magic" ng-click="domainChecker()">--}}
-                                        {{--                                                            Kiểm tra Tên miền--}}
-                                        {{--                                                        </button>--}}
-                                        {{--                                                    </div>--}}
-                                        {{--                                                </div>--}}
-                                        {{--                                                <div class="col-md-9 col-md-9 col-6 vertical-center tablet">--}}
-                                        {{--                                                    <img src="{{asset('img/logo-hostvn-blue.svg')}}"--}}
-                                        {{--                                                         class="logo">--}}
-                                        {{--                                                </div>--}}
+{{--                                    <div class="top-option-wrap desktop">--}}
+{{--                                        --}}{{--                                        <div class="container">--}}
+{{--                                        --}}{{--                                            <div class="row">--}}
+{{--                                        --}}{{--                                                <div class="col-lg-10">--}}
+{{--                                        --}}{{--                                                    <div class="domain-search-box" ng-init="domain=''">--}}
+{{--                                        --}}{{--                                                        <input type="text" placeholder="" ng-model="domain" value=""--}}
+{{--                                        --}}{{--                                                               my-enter="domainChecker()">--}}
+{{--                                        --}}{{--                                                        <button type="button" class="button ripple-magic" ng-click="domainChecker()">--}}
+{{--                                        --}}{{--                                                            Kiểm tra Tên miền--}}
+{{--                                        --}}{{--                                                        </button>--}}
+{{--                                        --}}{{--                                                    </div>--}}
+{{--                                        --}}{{--                                                </div>--}}
+{{--                                        --}}{{--                                                <div class="col-md-9 col-md-9 col-6 vertical-center tablet">--}}
+{{--                                        --}}{{--                                                    <img src="{{asset('img/logo-hostvn-blue.svg')}}"--}}
+{{--                                        --}}{{--                                                         class="logo">--}}
+{{--                                        --}}{{--                                                </div>--}}
 
-                                        {{--                                                <div class="col-lg-1 col-md-1 col-2 vertical-center">--}}
-                                        {{--                                                    <div class="center text-align-right">--}}
-                                        {{--                                                        <a href="https://blog.hostvn.net/khuyen-mai" target="_blank">--}}
-                                        {{--                                                            <i class="icon-notifications-button option-icon icon-hover">--}}
-                                        {{--                                                                <span class="red-dot"></span>--}}
-                                        {{--                                                            </i>--}}
-                                        {{--                                                        </a>--}}
-                                        {{--                                                    </div>--}}
-                                        {{--                                                </div>--}}
-                                        {{--                                                <div class="col-lg-1 col-md-1 col-2 vertical-center">--}}
-                                        {{--                                                    <div class="center text-align-right">--}}
-                                        {{--                                                        <a href="https://manage.hostvn.net/cart.php?a=view" target="_blank">--}}
-                                        {{--                                                            <i class="icon-commerce-and-shopping cart-icon bg-icon-hover"></i>--}}
-                                        {{--                                                        </a>--}}
-                                        {{--                                                    </div>--}}
-                                        {{--                                                </div>--}}
-                                        {{--                                                <div class="col-lg-1 col-md-1 col-2 vertical-center tablet">--}}
-                                        {{--                                                    <div class="center">--}}
-                                        {{--                                                        <a class="menu-icon">--}}
-                                        {{--                                                            <span class="line"></span>--}}
-                                        {{--                                                            <span class="line"></span>--}}
-                                        {{--                                                            <span class="line"></span>--}}
-                                        {{--                                                        </a>--}}
-                                        {{--                                                    </div>--}}
-                                        {{--                                                </div>--}}
-                                        {{--                                            </div>--}}
-                                        {{--                                            <div class="row desktop">--}}
-                                        {{--                                                <div class="col-lg-12">--}}
-                                        {{--                                                    <ul class="domains-suggestion">--}}
-                                        {{--                                                        <li>--}}
-                                        {{--                                                            <a href="https://manage.hostvn.net/cart.php?type=domain&amp;sld=&amp;tld=.com">--}}
-                                        {{--                                                                <img src="{{asset('img/com-1.svg')}}">--}}
-                                        {{--                                                                <span class="old-price">330K</span>--}}
-                                        {{--                                                                <span class="price">264K</span>--}}
-                                        {{--                                                            </a>--}}
-                                        {{--                                                        </li>--}}
-                                        {{--                                                        <li>--}}
-                                        {{--                                                            <a href="https://manage.hostvn.net/cart.php?type=domain&amp;sld=&amp;tld=.net">--}}
-                                        {{--                                                                <img src="{{asset('img/net-1.svg')}}">--}}
-                                        {{--                                                                <span class="old-price">319K</span>--}}
-                                        {{--                                                                <span class="price">299K</span>--}}
-                                        {{--                                                            </a>--}}
-                                        {{--                                                        </li>--}}
-                                        {{--                                                        <li>--}}
-                                        {{--                                                            <a href="https://manage.hostvn.net/cart.php?type=domain&amp;sld=&amp;tld=.vn">--}}
-                                        {{--                                                                <img src="{{asset('img/vn-1.svg')}}">--}}
-                                        {{--                                                                <span class="old-price">830K</span>--}}
-                                        {{--                                                                <span class="price">770K</span>--}}
-                                        {{--                                                            </a>--}}
-                                        {{--                                                        </li>--}}
-                                        {{--                                                        <li>--}}
-                                        {{--                                                            <a href="https://manage.hostvn.net/cart.php?type=domain&amp;sld=&amp;tld=.com.vn">--}}
-                                        {{--                                                                <img src="{{asset('img/com.vn_-1.svg')}}">--}}
-                                        {{--                                                                <span class="old-price">750K</span>--}}
-                                        {{--                                                                <span class="price">670K</span>--}}
-                                        {{--                                                            </a>--}}
-                                        {{--                                                        </li>--}}
-                                        {{--                                                        <li>--}}
-                                        {{--                                                            <a href="https://manage.hostvn.net/cart.php?type=domain&amp;sld=&amp;tld=.org">--}}
-                                        {{--                                                                <img src="{{asset('img/org.svg')}}">--}}
-                                        {{--                                                                <span class="old-price">349K</span>--}}
-                                        {{--                                                                <span class="price">280K</span>--}}
-                                        {{--                                                            </a>--}}
-                                        {{--                                                        </li>--}}
-                                        {{--                                                        <li>--}}
-                                        {{--                                                            <a href="https://manage.hostvn.net/cart.php?type=domain&amp;sld=&amp;tld=.biz">--}}
-                                        {{--                                                                <img src="{{asset('img/biz-1.svg')}}">--}}
-                                        {{--                                                                <span class="old-price">380K</span>--}}
-                                        {{--                                                                <span class="price">349K</span>--}}
-                                        {{--                                                            </a>--}}
-                                        {{--                                                        </li>--}}
-                                        {{--                                                    </ul>--}}
-                                        {{--                                                </div>--}}
-                                        {{--                                            </div>--}}
-                                        {{--                                        </div>--}}
-                                    </div>
+{{--                                        --}}{{--                                                <div class="col-lg-1 col-md-1 col-2 vertical-center">--}}
+{{--                                        --}}{{--                                                    <div class="center text-align-right">--}}
+{{--                                        --}}{{--                                                        <a href="https://blog.hostvn.net/khuyen-mai" target="_blank">--}}
+{{--                                        --}}{{--                                                            <i class="icon-notifications-button option-icon icon-hover">--}}
+{{--                                        --}}{{--                                                                <span class="red-dot"></span>--}}
+{{--                                        --}}{{--                                                            </i>--}}
+{{--                                        --}}{{--                                                        </a>--}}
+{{--                                        --}}{{--                                                    </div>--}}
+{{--                                        --}}{{--                                                </div>--}}
+{{--                                        --}}{{--                                                <div class="col-lg-1 col-md-1 col-2 vertical-center">--}}
+{{--                                        --}}{{--                                                    <div class="center text-align-right">--}}
+{{--                                        --}}{{--                                                        <a href="https://manage.hostvn.net/cart.php?a=view" target="_blank">--}}
+{{--                                        --}}{{--                                                            <i class="icon-commerce-and-shopping cart-icon bg-icon-hover"></i>--}}
+{{--                                        --}}{{--                                                        </a>--}}
+{{--                                        --}}{{--                                                    </div>--}}
+{{--                                        --}}{{--                                                </div>--}}
+{{--                                        --}}{{--                                                <div class="col-lg-1 col-md-1 col-2 vertical-center tablet">--}}
+{{--                                        --}}{{--                                                    <div class="center">--}}
+{{--                                        --}}{{--                                                        <a class="menu-icon">--}}
+{{--                                        --}}{{--                                                            <span class="line"></span>--}}
+{{--                                        --}}{{--                                                            <span class="line"></span>--}}
+{{--                                        --}}{{--                                                            <span class="line"></span>--}}
+{{--                                        --}}{{--                                                        </a>--}}
+{{--                                        --}}{{--                                                    </div>--}}
+{{--                                        --}}{{--                                                </div>--}}
+{{--                                        --}}{{--                                            </div>--}}
+{{--                                        --}}{{--                                            <div class="row desktop">--}}
+{{--                                        --}}{{--                                                <div class="col-lg-12">--}}
+{{--                                        --}}{{--                                                    <ul class="domains-suggestion">--}}
+{{--                                        --}}{{--                                                        <li>--}}
+{{--                                        --}}{{--                                                            <a href="https://manage.hostvn.net/cart.php?type=domain&amp;sld=&amp;tld=.com">--}}
+{{--                                        --}}{{--                                                                <img src="{{asset('img/com-1.svg')}}">--}}
+{{--                                        --}}{{--                                                                <span class="old-price">330K</span>--}}
+{{--                                        --}}{{--                                                                <span class="price">264K</span>--}}
+{{--                                        --}}{{--                                                            </a>--}}
+{{--                                        --}}{{--                                                        </li>--}}
+{{--                                        --}}{{--                                                        <li>--}}
+{{--                                        --}}{{--                                                            <a href="https://manage.hostvn.net/cart.php?type=domain&amp;sld=&amp;tld=.net">--}}
+{{--                                        --}}{{--                                                                <img src="{{asset('img/net-1.svg')}}">--}}
+{{--                                        --}}{{--                                                                <span class="old-price">319K</span>--}}
+{{--                                        --}}{{--                                                                <span class="price">299K</span>--}}
+{{--                                        --}}{{--                                                            </a>--}}
+{{--                                        --}}{{--                                                        </li>--}}
+{{--                                        --}}{{--                                                        <li>--}}
+{{--                                        --}}{{--                                                            <a href="https://manage.hostvn.net/cart.php?type=domain&amp;sld=&amp;tld=.vn">--}}
+{{--                                        --}}{{--                                                                <img src="{{asset('img/vn-1.svg')}}">--}}
+{{--                                        --}}{{--                                                                <span class="old-price">830K</span>--}}
+{{--                                        --}}{{--                                                                <span class="price">770K</span>--}}
+{{--                                        --}}{{--                                                            </a>--}}
+{{--                                        --}}{{--                                                        </li>--}}
+{{--                                        --}}{{--                                                        <li>--}}
+{{--                                        --}}{{--                                                            <a href="https://manage.hostvn.net/cart.php?type=domain&amp;sld=&amp;tld=.com.vn">--}}
+{{--                                        --}}{{--                                                                <img src="{{asset('img/com.vn_-1.svg')}}">--}}
+{{--                                        --}}{{--                                                                <span class="old-price">750K</span>--}}
+{{--                                        --}}{{--                                                                <span class="price">670K</span>--}}
+{{--                                        --}}{{--                                                            </a>--}}
+{{--                                        --}}{{--                                                        </li>--}}
+{{--                                        --}}{{--                                                        <li>--}}
+{{--                                        --}}{{--                                                            <a href="https://manage.hostvn.net/cart.php?type=domain&amp;sld=&amp;tld=.org">--}}
+{{--                                        --}}{{--                                                                <img src="{{asset('img/org.svg')}}">--}}
+{{--                                        --}}{{--                                                                <span class="old-price">349K</span>--}}
+{{--                                        --}}{{--                                                                <span class="price">280K</span>--}}
+{{--                                        --}}{{--                                                            </a>--}}
+{{--                                        --}}{{--                                                        </li>--}}
+{{--                                        --}}{{--                                                        <li>--}}
+{{--                                        --}}{{--                                                            <a href="https://manage.hostvn.net/cart.php?type=domain&amp;sld=&amp;tld=.biz">--}}
+{{--                                        --}}{{--                                                                <img src="{{asset('img/biz-1.svg')}}">--}}
+{{--                                        --}}{{--                                                                <span class="old-price">380K</span>--}}
+{{--                                        --}}{{--                                                                <span class="price">349K</span>--}}
+{{--                                        --}}{{--                                                            </a>--}}
+{{--                                        --}}{{--                                                        </li>--}}
+{{--                                        --}}{{--                                                    </ul>--}}
+{{--                                        --}}{{--                                                </div>--}}
+{{--                                        --}}{{--                                            </div>--}}
+{{--                                        --}}{{--                                        </div>--}}
+{{--                                    </div>--}}
                                 </div>
                                 <!-- end header -->
 

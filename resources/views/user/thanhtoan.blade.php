@@ -84,9 +84,9 @@
                                                                value="{{$domain}}" hidden>
                                                         <p>Phương thức thanh toán :</p>
                                                         <input type="radio" id="PayPal" name="PayPal" value="PayPal"
-                                                               selected>
+                                                               checked>
                                                         <label for="PayPal">PayPal</label><br>
-                                                        <input type="submit" value="Xác nhận">
+                                                        <input type="submit" class="btn btn-info" value="Xác nhận">
 
 
                                                     </form>

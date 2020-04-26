@@ -7,6 +7,7 @@ use App\Services\PayPalService as PayPalSvc;
 use Auth;
 use Illuminate\Http\Request;
 
+
 class PaypalController extends PayPalSvc
 {
     private $paypalSvc;

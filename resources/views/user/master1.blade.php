@@ -15,7 +15,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular-sanitize.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+{{--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>--}}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script
@@ -171,7 +171,7 @@
     <link rel='stylesheet' id='owl-theme-css'
           href='{{asset('css/owl.theme.default.min9dff.css?ver=5.3.2')}}'
           type='text/css' media='all'/>
-    <link rel='stylesheet' id='main-css' href='{{asset('css/app9dff.css?ver=5.3.2')}}' type='text/css'
+    <link rel='stylesheet' id='main-css' href='{{asset('css/app9dff.css')}}' type='text/css'
           media='all'/>
     <link rel='stylesheet' id='moon-css' href='{{asset('css/style9dff.css?ver=5.3.2')}}'
           type='text/css' media='all'/>
@@ -263,7 +263,7 @@
 </script>
 <script type='text/javascript' src='{{asset('js/postratings-jsc05e.js?ver=1.87')}}'></script>
 <script type='text/javascript' src='{{asset('js/modules9dff.js?ver=5.3.2')}}'></script>
-<script type='text/javascript' src='{{asset('js/app9dff.js?ver=5.3.2')}}'></script>
+<script type='text/javascript' src='{{asset('js/app9dff.js')}}'></script>
 <script type='text/javascript' src='{{asset('js/wp-embed.min9dff.js?ver=5.3.2')}}'></script>
 <script type='text/javascript'
         src='{{asset('js/frontend-modules.min4dc3.js?ver=2.8.2')}}'></script>
