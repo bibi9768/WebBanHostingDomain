@@ -108,11 +108,11 @@ class UserController extends Controller
 
     public function getHostingLinux()
     {
-        $lh1 = Hosting::where('loaihosting', '2')->first();
-        $lh2 = Hosting::where('loaihosting', '2')->skip(1)->first();
-        $lh3 = Hosting::where('loaihosting', '2')->skip(2)->first();
-        $lh4 = Hosting::where('loaihosting', '2')->skip(3)->first();
-        $lh5 = Hosting::where('loaihosting', '2')->skip(4)->first();
+        $lh1 = Hosting::where('loaihosting', '1')->first();
+        $lh2 = Hosting::where('loaihosting', '1')->skip(1)->first();
+        $lh3 = Hosting::where('loaihosting', '1')->skip(2)->first();
+        $lh4 = Hosting::where('loaihosting', '1')->skip(3)->first();
+        $lh5 = Hosting::where('loaihosting', '1')->skip(4)->first();
         $gialh1 = ChiTietHosting::where('idhosting', $lh1->id)->get();
         $gialh2 = ChiTietHosting::where('idhosting', $lh2->id)->get();
         $gialh3 = ChiTietHosting::where('idhosting', $lh3->id)->get();
@@ -123,8 +123,17 @@ class UserController extends Controller
 
     public function getHostingWindows()
     {
-
-        return view('user.hostingwindows');
+        $hw1 = Hosting::where('loaihosting', '2')->first();
+        $hw2 = Hosting::where('loaihosting', '2')->skip(1)->first();
+        $hw3 = Hosting::where('loaihosting', '2')->skip(2)->first();
+        $hw4 = Hosting::where('loaihosting', '2')->skip(3)->first();
+        $hw5 = Hosting::where('loaihosting', '2')->skip(4)->first();
+        $giahw1 = ChiTietHosting::where('idhosting', $hw1->id)->get();
+        $giahw2 = ChiTietHosting::where('idhosting', $hw2->id)->get();
+        $giahw3 = ChiTietHosting::where('idhosting', $hw3->id)->get();
+        $giahw4 = ChiTietHosting::where('idhosting', $hw4->id)->get();
+        $giahw5 = ChiTietHosting::where('idhosting', $hw5->id)->get();
+        return view('user.hostingwindows',compact('hw1','hw2','hw3','hw4','hw5','giahw1','giahw2','giahw3','giahw4','giahw5'));
     }
 
     public function kiemTraTenMien($name, $domain)
@@ -202,6 +211,12 @@ class UserController extends Controller
         $tatca = Domain::all();
         $gia = Domain::where('domain', $domain)->select('phiduytrimoinam')->first()->phiduytrimoinam;
         return view('user.thanhtoan', compact('gia', 'quocte', 'vietnam', 'dacbiet', 'tatca', 'domaininfo', 'fulldomain', 'name', 'domain'));
+    }
+
+    public function thanhToanHosting($loai, $thoihan)
+    {
+        dd($loai.$thoihan);
+         return view('user.thanhtoan', compact('gia', 'quocte', 'vietnam', 'dacbiet', 'tatca', 'domaininfo', 'fulldomain', 'name', 'domain'));
     }
 
 

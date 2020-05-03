@@ -175,7 +175,7 @@
 
                                                     <b>{{$domaininfo['message']}}</b>
                                                     @if($domaininfo['status']==0)
-                                                        <a href="{{route('getHomePage')}}/thanh-toan/name={{$name}}&domain={{$domain}}"
+                                                        <a href="{{route('getHomePage')}}/thanh-toan/domain/name={{$name}}&domain={{$domain}}"
                                                            class="button button-special ripple-magic">Đăng ký ngay</a>
                                                     @endif
 

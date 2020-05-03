@@ -47,62 +47,62 @@
                                                     </p>
                                                 </div>
                                                 <div class="col-lg-4 text-align-center reverse-padding-bottom">
-                                                    <form id="mauTicForm">
-                                                        <div class="banner-form-box">
-                                                            <b>Muốn trải nghiệm dùng thử 7 ngày MIỄN PHÍ?</b>
-                                                            <div class="form-group mb-0">
-                                                                <input type="text" placeholder="Tên của bạn" required
-                                                                       id="mauticform_input_dangkydungthu_fullname"
-                                                                       name="mauticform[fullname]"
-                                                                       class="mauticform_dangkydungthu_fullname">
-                                                                <span hidden
-                                                                      class="mauticform_dangkydungthu_fullname_error text-danger"></span>
-                                                            </div>
-                                                            <div class="form-group mb-0">
-                                                                <input type="email" placeholder="Địa chỉ email" required
-                                                                       id="mauticform_dangkydungthu_email"
-                                                                       name="mauticform[email]"
-                                                                       class="mauticform_dangkydungthu_email">
-                                                                <span hidden
-                                                                      class="mauticform_dangkydungthu_email_error text-danger"></span>
-                                                            </div>
-                                                            <div class="form-group mb-0">
-                                                                <input type="text" placeholder="Điện thoại liên hệ"
-                                                                       required
-                                                                       id="mauticform_dangkydungthu_phone"
-                                                                       name="mauticform[phone]"
-                                                                       class="mauticform_dangkydungthu_phone">
-                                                                <span hidden
-                                                                      class="mauticform_dangkydungthu_phone_error text-danger"></span>
-                                                            </div>
-                                                            <button type="button"
-                                                                    class="button-orange shadow-button-orange ripple-magic btn-banner2"
-                                                                    ng-click="mauTicPost('mauticform_dangkydungthu_')">
-                                                                Đăng ký dùng thử ngay
-                                                            </button>
-                                                            <input type="hidden" name="mauticform[services]"
-                                                                   id="mauticform_dangkydungthu_services"
-                                                                   value="Hosting Windows"
-                                                                   autocomplete="off"
-                                                                   class="mauticform_dangkydungthu_services">
-                                                            <input type="hidden" name="mauticform[formId]"
-                                                                   id="mauticform_dangkydungthu_id"
-                                                                   value="23"
-                                                                   autocomplete="off"
-                                                                   class="mauticform_dangkydungthu_formId">
-                                                            <input type="hidden" name="mauticform[return]"
-                                                                   id="mauticform_dangkydungthu_return"
-                                                                   value="index.html"
-                                                                   autocomplete="off"
-                                                                   class="mauticform_dangkydungthu_return">
-                                                            <input type="hidden" name="mauticform[formName]"
-                                                                   id="mauticform_dangkydungthu_name"
-                                                                   value="dangkydungthu" autocomplete="off"
-                                                                   class="mauticform_dangkydungthu_formName">
-                                                            <input type="hidden" name="mauticform[messenger]"
-                                                                   id="mauticform_dangkydungthu_messenger" value="1">
-                                                        </div>
-                                                    </form>
+{{--                                                    <form id="mauTicForm">--}}
+{{--                                                        <div class="banner-form-box">--}}
+{{--                                                            <b>Muốn trải nghiệm dùng thử 7 ngày MIỄN PHÍ?</b>--}}
+{{--                                                            <div class="form-group mb-0">--}}
+{{--                                                                <input type="text" placeholder="Tên của bạn" required--}}
+{{--                                                                       id="mauticform_input_dangkydungthu_fullname"--}}
+{{--                                                                       name="mauticform[fullname]"--}}
+{{--                                                                       class="mauticform_dangkydungthu_fullname">--}}
+{{--                                                                <span hidden--}}
+{{--                                                                      class="mauticform_dangkydungthu_fullname_error text-danger"></span>--}}
+{{--                                                            </div>--}}
+{{--                                                            <div class="form-group mb-0">--}}
+{{--                                                                <input type="email" placeholder="Địa chỉ email" required--}}
+{{--                                                                       id="mauticform_dangkydungthu_email"--}}
+{{--                                                                       name="mauticform[email]"--}}
+{{--                                                                       class="mauticform_dangkydungthu_email">--}}
+{{--                                                                <span hidden--}}
+{{--                                                                      class="mauticform_dangkydungthu_email_error text-danger"></span>--}}
+{{--                                                            </div>--}}
+{{--                                                            <div class="form-group mb-0">--}}
+{{--                                                                <input type="text" placeholder="Điện thoại liên hệ"--}}
+{{--                                                                       required--}}
+{{--                                                                       id="mauticform_dangkydungthu_phone"--}}
+{{--                                                                       name="mauticform[phone]"--}}
+{{--                                                                       class="mauticform_dangkydungthu_phone">--}}
+{{--                                                                <span hidden--}}
+{{--                                                                      class="mauticform_dangkydungthu_phone_error text-danger"></span>--}}
+{{--                                                            </div>--}}
+{{--                                                            <button type="button"--}}
+{{--                                                                    class="button-orange shadow-button-orange ripple-magic btn-banner2"--}}
+{{--                                                                    ng-click="mauTicPost('mauticform_dangkydungthu_')">--}}
+{{--                                                                Đăng ký dùng thử ngay--}}
+{{--                                                            </button>--}}
+{{--                                                            <input type="hidden" name="mauticform[services]"--}}
+{{--                                                                   id="mauticform_dangkydungthu_services"--}}
+{{--                                                                   value="Hosting Windows"--}}
+{{--                                                                   autocomplete="off"--}}
+{{--                                                                   class="mauticform_dangkydungthu_services">--}}
+{{--                                                            <input type="hidden" name="mauticform[formId]"--}}
+{{--                                                                   id="mauticform_dangkydungthu_id"--}}
+{{--                                                                   value="23"--}}
+{{--                                                                   autocomplete="off"--}}
+{{--                                                                   class="mauticform_dangkydungthu_formId">--}}
+{{--                                                            <input type="hidden" name="mauticform[return]"--}}
+{{--                                                                   id="mauticform_dangkydungthu_return"--}}
+{{--                                                                   value="index.html"--}}
+{{--                                                                   autocomplete="off"--}}
+{{--                                                                   class="mauticform_dangkydungthu_return">--}}
+{{--                                                            <input type="hidden" name="mauticform[formName]"--}}
+{{--                                                                   id="mauticform_dangkydungthu_name"--}}
+{{--                                                                   value="dangkydungthu" autocomplete="off"--}}
+{{--                                                                   class="mauticform_dangkydungthu_formName">--}}
+{{--                                                            <input type="hidden" name="mauticform[messenger]"--}}
+{{--                                                                   id="mauticform_dangkydungthu_messenger" value="1">--}}
+{{--                                                        </div>--}}
+{{--                                                    </form>--}}
                                                 </div>
                                             </div>
                                         </div>
@@ -149,87 +149,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-4 col-md-12">
-                                                    <div class="rating-box">
-                                                        <!--<i class="icon-star-1 cl-yellow"></i>
-                                                        <i class="icon-star-1 cl-yellow"></i>
-                                                        <i class="icon-star-1 cl-yellow"></i>
-                                                        <i class="icon-star-1"></i>
-                                                        <i class="icon-star-1"></i>-->
-                                                        <div id="post-ratings-465" class="post-ratings" itemscope
-                                                             itemtype="http://schema.org/Article"
-                                                             data-nonce="4c17aa9d6d"><em>(2 bình chọn, trung bình
-                                                                4,00/5)</em> <img id="rating_465_1"
-                                                                                  src="../../wp-content/plugins/wp-postratings/images/stars/rating_on.gif"
-                                                                                  alt="1 Sao" title="1 Sao"
-                                                                                  onmouseover="current_rating(465, 1, '1 Sao');"
-                                                                                  onmouseout="ratings_off(4, 0, 0);"
-                                                                                  onclick="rate_post();"
-                                                                                  onkeypress="rate_post();"
-                                                                                  style="cursor: pointer; border: 0px;"/><img
-                                                                id="rating_465_2"
-                                                                src="../../wp-content/plugins/wp-postratings/images/stars/rating_on.gif"
-                                                                alt="2 Sao" title="2 Sao"
-                                                                onmouseover="current_rating(465, 2, '2 Sao');"
-                                                                onmouseout="ratings_off(4, 0, 0);"
-                                                                onclick="rate_post();" onkeypress="rate_post();"
-                                                                style="cursor: pointer; border: 0px;"/><img
-                                                                id="rating_465_3"
-                                                                src="../../wp-content/plugins/wp-postratings/images/stars/rating_on.gif"
-                                                                alt="3 Sao" title="3 Sao"
-                                                                onmouseover="current_rating(465, 3, '3 Sao');"
-                                                                onmouseout="ratings_off(4, 0, 0);"
-                                                                onclick="rate_post();" onkeypress="rate_post();"
-                                                                style="cursor: pointer; border: 0px;"/><img
-                                                                id="rating_465_4"
-                                                                src="../../wp-content/plugins/wp-postratings/images/stars/rating_on.gif"
-                                                                alt="4 Sao" title="4 Sao"
-                                                                onmouseover="current_rating(465, 4, '4 Sao');"
-                                                                onmouseout="ratings_off(4, 0, 0);"
-                                                                onclick="rate_post();" onkeypress="rate_post();"
-                                                                style="cursor: pointer; border: 0px;"/><img
-                                                                id="rating_465_5"
-                                                                src="../../wp-content/plugins/wp-postratings/images/stars/rating_off.gif"
-                                                                alt="5 Sao" title="5 Sao"
-                                                                onmouseover="current_rating(465, 5, '5 Sao');"
-                                                                onmouseout="ratings_off(4, 0, 0);"
-                                                                onclick="rate_post();" onkeypress="rate_post();"
-                                                                style="cursor: pointer; border: 0px;"/>
-                                                            <meta itemprop="name"
-                                                                  content="Dịch Vụ Web Hosting Windows | Dành cho mã nguồn ASP.NET"/>
-                                                            <meta itemprop="headline"
-                                                                  content="Dịch Vụ Web Hosting Windows | Dành cho mã nguồn ASP.NET"/>
-                                                            <meta itemprop="description" content="
 
-
-                                    Li&ecirc;n hệ
-
-
-                           ..."/>
-                                                            <meta itemprop="datePublished"
-                                                                  content="2019-09-10T07:37:58+07:00"/>
-                                                            <meta itemprop="dateModified"
-                                                                  content="2020-02-28T16:27:17+07:00"/>
-                                                            <meta itemprop="url" content="index.html"/>
-                                                            <meta itemprop="author" content="admin"/>
-                                                            <meta itemprop="mainEntityOfPage" content="index.html"/>
-                                                            <div style="display: none;" itemprop="publisher" itemscope
-                                                                 itemtype="https://schema.org/Organization">
-                                                                <meta itemprop="name" content="hostvn.net"/>
-                                                                <meta itemprop="url" content="../../index.html"/>
-                                                                <div itemprop="logo" itemscope
-                                                                     itemtype="https://schema.org/ImageObject">
-                                                                    <meta itemprop="url" content=""/>
-                                                                </div>
-                                                            </div>
-                                                            <div style="display: none;" itemprop="aggregateRating"
-                                                                 itemscope itemtype="http://schema.org/AggregateRating">
-                                                                <meta itemprop="bestRating" content="5"/>
-                                                                <meta itemprop="worstRating" content="1"/>
-                                                                <meta itemprop="ratingValue" content="4"/>
-                                                                <meta itemprop="ratingCount" content="2"/>
-                                                            </div>
-                                                        </div>
-                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -359,7 +279,7 @@
                                                         <div class="product-introduction-img vertical-center">
                                                             <div class="center">
                                                                 <img
-                                                                    src="../../wp-content/uploads/2019/09/hosting-win.svg">
+                                                                    src="{{asset('img/hosting-win.svg')}}">
                                                             </div>
                                                         </div>
                                                     </div>
@@ -439,7 +359,7 @@
                                                 <div class="col-lg-12 text-align-center">
                                                     <h2>Bảng giá dịch vụ <span class=cl-blue>Hosting Windows</span></h2>
                                                     <p class="intro" style="margin-bottom: 20px">Các gói dịch vụ Hosting
-                                                        Windows tại HOSTVN đa dạng về thông số cấu hình đáp ứng hầu hết
+                                                        Windows tại HTVIETNAM đa dạng về thông số cấu hình đáp ứng hầu hết
                                                         nhu cầu sử dụng của khách hàng.</p>
                                                 </div>
                                             </div>
@@ -448,31 +368,31 @@
                                                     <div class="packages-wrap">
                                                         <div class="package">
                                                             <div class="package-header ">
-                                                                <h3>W-Lite</h3>
+                                                                <h3>{{$hw1->tengoi}}</h3>
                                                                 <p><span style="color: rgb(247, 218, 100);"><i
                                                                             class="icon-left-quote"></i> Giá bắt đầu từ <i
                                                                             class="icon-right-quotation-sign"></i></span></a>
                                                                 </p>
                                                                 <strong id="packagePrice1">
-                                                                    {{packagePrice1 | productPrice}}
+                                                                    {{number_format($hw1->giabatdautu)}}
                                                                 </strong>
-                                                                <span ng-if="packagePrice1">vnđ/tháng</span>
+                                                                <span>vnđ/tháng</span>
                                                             </div>
                                                             <div class="package-body">
                                                                 <ul style="text-align: left;">
                                                                     <li style="text-align: left; margin-left: 10px;">
                                                                         <i class="icon-tick cl-label"></i> Dung lượng
-                                                                        <b><span class=cl-orange> 500 MB</span></b>
+                                                                        <b><span class=cl-orange> {{$hw1->dungluong}}</span></b>
                                                                     <li style="text-align: left; margin-left: 10px;">
                                                                         <i class="icon-tick cl-blue"></i> Băng thông <b><span
-                                                                                class=cl-blue> 10 GB</span></b> <i
+                                                                                class=cl-blue> {{$hw1->bangthong}}</span></b> <i
                                                                             class="icon-information-button"
                                                                             data-toggle="tooltip" data-placement="top"
                                                                             title="Lưu lượng dữ liệu download/upload tối đa hàng tháng của gói hosting. Băng thông sẽ được tính khi có khách truy cập website hoặc có sự trao đổi dữ liệu qua lại trên hosting và được reset về 0."></i>
                                                                     </li>
                                                                     <li style="text-align: left; margin-left: 10px;">
                                                                         <i class="icon-tick cl-blue"></i> Website
-                                                                        <b><span class=cl-orange> 01</span></b>
+                                                                        <b><span class=cl-orange> {{$hw1->website}}</span></b>
                                                                     </li>
                                                                     <li style="text-align: left; margin-left: 10px;">
                                                                         <i class="icon-tick cl-blue"></i>
@@ -495,59 +415,50 @@
                                                             </div>
                                                             <div class="package-bottom">
 
-                                                                <select name="package_price" id="selectPackagePrice1"
-                                                                        ng-model="packagePrice1"
-                                                                        ng-init="packagePrice1='annually|27.300'"
-                                                                        ng-show="packagePrice1">
-                                                                    <option value="semiannually|28.200">06 tháng =
-                                                                        169.200đ
-                                                                    </option>
-                                                                    <option value="annually|27.300">12 tháng =
-                                                                        327.600đ
-                                                                    </option>
-                                                                    <option value="biennially|26.400">24 tháng =
-                                                                        633.600đ
-                                                                    </option>
-                                                                    <option value="triennially|25.500">36 tháng =
-                                                                        918.000đ
-                                                                    </option>
+                                                                <select name="package_price" id="selectPackagePrice1">
+                                                                    @foreach($giahw1 as $glh1)
+                                                                        <option value="{{$glh1->gia}}"
+                                                                                @if($glh1->id==$giahw1[0]->id) selected @endif>{{$glh1->sothang}}
+                                                                            tháng =
+                                                                            {{number_format($glh1->gia)}}đ
+                                                                        </option>
+                                                                    @endforeach
                                                                 </select>
 
 
-                                                                <button
-                                                                    class="button-orange shadow-button-orange ripple-magic"
-                                                                    ng-click="toCart('hosting', 20, '',257, '', 'selectPackagePrice1')">
+                                                                <button onclick="location.href='{{route('getHomePage')}}/thanh-toan/hosting/loaihosting={{$hw1->id}}&thoihan='+document.getElementById('selectPackagePrice1').value"
+                                                                        class="button-orange shadow-button-orange ripple-magic button" >
                                                                     Đăng ký ngay
                                                                 </button>
                                                             </div>
                                                         </div>
                                                         <div class="package">
                                                             <div class="package-header ">
-                                                                <h3>W-Basic</h3>
+                                                                <h3>{{$hw2->tengoi}}</h3>
                                                                 <p><span style="color: rgb(247, 218, 100);"><i
                                                                             class="icon-left-quote"></i> Giá bắt đầu từ <i
                                                                             class="icon-right-quotation-sign"></i></span></a>
                                                                 </p>
                                                                 <strong id="packagePrice2">
-                                                                    {{packagePrice2 | productPrice}}
+                                                                    {{number_format($hw2->giabatdautu)}}
                                                                 </strong>
-                                                                <span ng-if="packagePrice2">vnđ/tháng</span>
+                                                                <span>vnđ/tháng</span>
                                                             </div>
                                                             <div class="package-body">
                                                                 <ul style="text-align: left;">
                                                                     <li style="text-align: left; margin-left: 10px;">
                                                                         <i class="icon-tick cl-label"></i> Dung lượng
-                                                                        <b><span class=cl-orange> 01 GB</span></b>
+                                                                        <b><span class=cl-orange> {{$hw2->dungluong}}</span></b>
                                                                     <li style="text-align: left; margin-left: 10px;">
                                                                         <i class="icon-tick cl-blue"></i> Băng thông <b><span
-                                                                                class=cl-blue> 25 GB</span></b> <i
+                                                                                class=cl-blue> {{$hw2->bangthong}}</span></b> <i
                                                                             class="icon-information-button"
                                                                             data-toggle="tooltip" data-placement="top"
                                                                             title="Lưu lượng dữ liệu download/upload tối đa hàng tháng của gói hosting. Băng thông sẽ được tính khi có khách truy cập website hoặc có sự trao đổi dữ liệu qua lại trên hosting và được reset về 0."></i>
                                                                     </li>
                                                                     <li style="text-align: left; margin-left: 10px;">
                                                                         <i class="icon-tick cl-blue"></i> Website
-                                                                        <b><span class=cl-orange> 02</span></b>
+                                                                        <b><span class=cl-orange> {{$hw2->website}}</span></b>
                                                                     </li>
                                                                     <li style="text-align: left; margin-left: 10px;">
                                                                         <i class="icon-tick cl-blue"></i>
@@ -570,31 +481,19 @@
                                                             </div>
                                                             <div class="package-bottom">
 
-                                                                <select name="package_price" id="selectPackagePrice2"
-                                                                        ng-model="packagePrice2"
-                                                                        ng-init="packagePrice2='annually|45.500'"
-                                                                        ng-show="packagePrice2">
-                                                                    <option value="quarterly|48.500">03 tháng =
-                                                                        145.500đ
-                                                                    </option>
-                                                                    <option value="semiannually|47.000">06 tháng =
-                                                                        282.000đ
-                                                                    </option>
-                                                                    <option value="annually|45.500">12 tháng =
-                                                                        546.000đ
-                                                                    </option>
-                                                                    <option value="biennially|44.000">24 tháng =
-                                                                        1.056.000đ
-                                                                    </option>
-                                                                    <option value="triennially|42.500">36 tháng =
-                                                                        1.530.000đ
-                                                                    </option>
+                                                                <select name="package_price" id="selectPackagePrice2">
+                                                                    @foreach($giahw2 as $glh1)
+                                                                        <option value="{{$glh1->gia}}"
+                                                                                @if($glh1->id==$giahw2[0]->id) selected @endif>{{$glh1->sothang}}
+                                                                            tháng =
+                                                                            {{number_format($glh1->gia)}}đ
+                                                                        </option>
+                                                                    @endforeach
                                                                 </select>
 
 
-                                                                <button
-                                                                    class="button-orange shadow-button-orange ripple-magic"
-                                                                    ng-click="toCart('hosting', 20, '',191, '', 'selectPackagePrice2')">
+                                                                <button onclick="location.href='{{route('getHomePage')}}/thanh-toan/hosting/loaihosting={{$hw2->id}}&thoihan='+document.getElementById('selectPackagePrice2').value"
+                                                                        class="button-orange shadow-button-orange ripple-magic button" >
                                                                     Đăng ký ngay
                                                                 </button>
                                                             </div>
@@ -607,31 +506,31 @@
                                                                        title="Sản phẩm được tin dùng nhiều nhất">
                                                                     </i><span>Được chọn nhiều nhất</span>
                                                                 </div>
-                                                                <h3>W-Enhanced</h3>
+                                                                <h3>{{$hw3->tengoi}}</h3>
                                                                 <p><span style="color: rgb(247, 218, 100);"><i
                                                                             class="icon-left-quote"></i> Giá bắt đầu từ <i
                                                                             class="icon-right-quotation-sign"></i></span></a>
                                                                 </p>
                                                                 <strong id="packagePrice3">
-                                                                    {{packagePrice3 | productPrice}}
+                                                                    {{number_format($hw3->giabatdautu)}}
                                                                 </strong>
-                                                                <span ng-if="packagePrice3">vnđ/tháng</span>
+                                                                <span>vnđ/tháng</span>
                                                             </div>
                                                             <div class="package-body">
                                                                 <ul style="text-align: left;">
                                                                     <li style="text-align: left; margin-left: 10px;">
                                                                         <i class="icon-tick cl-label"></i> Dung lượng
-                                                                        <b><span class=cl-orange> 02 GB</span></b>
+                                                                        <b><span class=cl-orange> {{$hw3->dungluong}}</span></b>
                                                                     <li style="text-align: left; margin-left: 10px;">
                                                                         <i class="icon-tick cl-blue"></i> Băng thông <b><span
-                                                                                class=cl-blue> 50 GB</span></b> <i
+                                                                                class=cl-blue> {{$hw3->bangthong}}</span></b> <i
                                                                             class="icon-information-button"
                                                                             data-toggle="tooltip" data-placement="top"
                                                                             title="Lưu lượng dữ liệu download/upload tối đa hàng tháng của gói hosting. Băng thông sẽ được tính khi có khách truy cập website hoặc có sự trao đổi dữ liệu qua lại trên hosting và được reset về 0."></i>
                                                                     </li>
                                                                     <li style="text-align: left; margin-left: 10px;">
                                                                         <i class="icon-tick cl-blue"></i> Website
-                                                                        <b><span class=cl-orange> 03</span></b>
+                                                                        <b><span class=cl-orange> {{$hw3->website}}</span></b>
                                                                     </li>
                                                                     <li style="text-align: left; margin-left: 10px;">
                                                                         <i class="icon-tick cl-blue"></i>
@@ -654,62 +553,50 @@
                                                             </div>
                                                             <div class="package-bottom">
 
-                                                                <select name="package_price" id="selectPackagePrice3"
-                                                                        ng-model="packagePrice3"
-                                                                        ng-init="packagePrice3='annually|86.450'"
-                                                                        ng-show="packagePrice3">
-                                                                    <option value="quarterly|92.150">03 tháng =
-                                                                        276.450đ
-                                                                    </option>
-                                                                    <option value="semiannually|89.300">06 tháng =
-                                                                        535.800đ
-                                                                    </option>
-                                                                    <option value="annually|86.450">12 tháng =
-                                                                        1.037.400đ
-                                                                    </option>
-                                                                    <option value="biennially|83.600">24 tháng =
-                                                                        2.006.400đ
-                                                                    </option>
-                                                                    <option value="triennially|80.750">36 tháng =
-                                                                        2.907.000đ
-                                                                    </option>
+                                                                <select name="package_price" id="selectPackagePrice3">
+                                                                    @foreach($giahw3 as $glh3)
+                                                                        <option value="{{$glh3->gia}}"
+                                                                                @if($glh3->id==$giahw3[0]->id) selected @endif>{{$glh3->sothang}}
+                                                                            tháng =
+                                                                            {{number_format($glh3->gia)}}đ
+                                                                        </option>
+                                                                    @endforeach
                                                                 </select>
 
 
-                                                                <button
-                                                                    class="button-orange shadow-button-orange ripple-magic"
-                                                                    ng-click="toCart('hosting', 20, '',193, '', 'selectPackagePrice3')">
+                                                                <button onclick="location.href='{{route('getHomePage')}}/thanh-toan/hosting/loaihosting={{$hw3->id}}&thoihan='+document.getElementById('selectPackagePrice3').value"
+                                                                        class="button-orange shadow-button-orange ripple-magic button" >
                                                                     Đăng ký ngay
                                                                 </button>
                                                             </div>
                                                         </div>
                                                         <div class="package">
                                                             <div class="package-header ">
-                                                                <h3>W-Premium</h3>
+                                                                <h3>{{$hw4->tengoi}}</h3>
                                                                 <p><span style="color: rgb(247, 218, 100);"><i
                                                                             class="icon-left-quote"></i> Giá bắt đầu từ <i
                                                                             class="icon-right-quotation-sign"></i></span></a>
                                                                 </p>
                                                                 <strong id="packagePrice4">
-                                                                    {{packagePrice4 | productPrice}}
+                                                                    {{number_format($hw4->giabatdautu)}}
                                                                 </strong>
-                                                                <span ng-if="packagePrice4">vnđ/tháng</span>
+                                                                <span>vnđ/tháng</span>
                                                             </div>
                                                             <div class="package-body">
                                                                 <ul style="text-align: left;">
                                                                     <li style="text-align: left; margin-left: 10px;">
                                                                         <i class="icon-tick cl-blue"></i> Dung lượng <b><span
-                                                                                class=cl-orange> 03 GB</span></b>
+                                                                                class=cl-orange> {{$hw4->dungluong}}</span></b>
                                                                     <li style="text-align: left; margin-left: 10px;">
                                                                         <i class="icon-tick cl-blue"></i> Băng thông <b><span
-                                                                                class=cl-blue> 200 GB</span></b> <i
+                                                                                class=cl-blue> {{$hw4->bangthong}}</span></b> <i
                                                                             class="icon-information-button"
                                                                             data-toggle="tooltip" data-placement="top"
                                                                             title="Lưu lượng dữ liệu download/upload tối đa hàng tháng của gói hosting. Băng thông sẽ được tính khi có khách truy cập website hoặc có sự trao đổi dữ liệu qua lại trên hosting và được reset về 0."></i>
                                                                     </li>
                                                                     <li style="text-align: left; margin-left: 10px;">
                                                                         <i class="icon-tick cl-blue"></i> Website
-                                                                        <b><span class=cl-orange> 06</span></b>
+                                                                        <b><span class=cl-orange> {{$hw4->website}}</span></b>
                                                                     </li>
                                                                     <li style="text-align: left; margin-left: 10px;">
                                                                         <i class="icon-tick cl-blue"></i>
@@ -732,55 +619,40 @@
                                                             </div>
                                                             <div class="package-bottom">
 
-                                                                <select name="package_price" id="selectPackagePrice4"
-                                                                        ng-model="packagePrice4"
-                                                                        ng-init="packagePrice4='annually|136.500'"
-                                                                        ng-show="packagePrice4">
-                                                                    <option value="monthly|150.000">01 tháng =
-                                                                        150.000đ
-                                                                    </option>
-                                                                    <option value="quarterly|145.500">03 tháng =
-                                                                        436.500đ
-                                                                    </option>
-                                                                    <option value="semiannually|141.000">06 tháng =
-                                                                        846.000đ
-                                                                    </option>
-                                                                    <option value="annually|136.500">12 tháng =
-                                                                        1.638.000đ
-                                                                    </option>
-                                                                    <option value="biennially|132.000">24 tháng =
-                                                                        3.168.000đ
-                                                                    </option>
-                                                                    <option value="triennially|127.500">36 tháng =
-                                                                        4.590.000đ
-                                                                    </option>
+                                                                <select name="package_price" id="selectPackagePrice4">
+                                                                    @foreach($giahw4 as $glh4)
+                                                                        <option value="{{$glh4->gia}}"
+                                                                                @if($glh4->id==$giahw4[0]->id) selected @endif>{{$glh4->sothang}}
+                                                                            tháng =
+                                                                            {{number_format($glh4->gia)}}đ
+                                                                        </option>
+                                                                    @endforeach
                                                                 </select>
 
 
-                                                                <button
-                                                                    class="button-orange shadow-button-orange ripple-magic"
-                                                                    ng-click="toCart('hosting', 20, '',194, '', 'selectPackagePrice4')">
+                                                                <button onclick="location.href='{{route('getHomePage')}}/thanh-toan/hosting/loaihosting={{$hw4->id}}&thoihan='+document.getElementById('selectPackagePrice4').value"
+                                                                        class="button-orange shadow-button-orange ripple-magic button" >
                                                                     Đăng ký ngay
                                                                 </button>
                                                             </div>
                                                         </div>
                                                         <div class="package">
                                                             <div class="package-header ">
-                                                                <h3>W-Advanced</h3>
+                                                                <h3>{{$hw5->tengoi}}</h3>
                                                                 <p><span style="color: rgb(247, 218, 100);"><i
                                                                             class="icon-left-quote"></i> Giá bắt đầu từ <i
                                                                             class="icon-right-quotation-sign"></i></span></a>
                                                                 </p>
                                                                 <strong id="packagePrice5">
-                                                                    {{packagePrice5 | productPrice}}
+                                                                    {{number_format($hw5->giabatdautu)}}
                                                                 </strong>
-                                                                <span ng-if="packagePrice5">vnđ/tháng</span>
+                                                                <span>vnđ/tháng</span>
                                                             </div>
                                                             <div class="package-body">
                                                                 <ul style="text-align: left;">
                                                                     <li style="text-align: left; margin-left: 10px;">
                                                                         <i class="icon-tick cl-label"></i> Dung lượng
-                                                                        <b><span class=cl-orange> 10 GB</span></b>
+                                                                        <b><span class=cl-orange> {{$hw5->dungluong}}</span></b>
                                                                     <li style="text-align: left; margin-left: 10px;">
                                                                         <i class="icon-tick cl-blue"></i> Băng thông <b><span
                                                                                 class=cl-blue> KGH</span></b> <i
@@ -790,7 +662,7 @@
                                                                     </li>
                                                                     <li style="text-align: left; margin-left: 10px;">
                                                                         <i class="icon-tick cl-blue"></i> Website
-                                                                        <b><span class=cl-orange> 08</span></b>
+                                                                        <b><span class=cl-orange> {{$hw5->website}}</span></b>
                                                                     </li>
                                                                     <li style="text-align: left; margin-left: 10px;">
                                                                         <i class="icon-tick cl-blue"></i>
@@ -813,34 +685,19 @@
                                                             </div>
                                                             <div class="package-bottom">
 
-                                                                <select name="package_price" id="selectPackagePrice5"
-                                                                        ng-model="packagePrice5"
-                                                                        ng-init="packagePrice5='annually|318.500'"
-                                                                        ng-show="packagePrice5">
-                                                                    <option value="monthly|350.000">01 tháng =
-                                                                        350.000đ
-                                                                    </option>
-                                                                    <option value="quarterly|339.500">03 tháng =
-                                                                        1.018.500đ
-                                                                    </option>
-                                                                    <option value="semiannually|329.000">06 tháng =
-                                                                        1.974.000đ
-                                                                    </option>
-                                                                    <option value="annually|318.500">12 tháng =
-                                                                        3.822.000đ
-                                                                    </option>
-                                                                    <option value="biennially|308.000">24 tháng =
-                                                                        7.392.000đ
-                                                                    </option>
-                                                                    <option value="triennially|297.500">36 tháng =
-                                                                        10.710.000đ
-                                                                    </option>
+                                                                <select name="package_price" id="selectPackagePrice5">
+                                                                    @foreach($giahw5 as $glh5)
+                                                                        <option value="{{$glh5->gia}}"
+                                                                                @if($glh5->id==$giahw1[0]->id) selected @endif>{{$glh5->sothang}}
+                                                                            tháng =
+                                                                            {{number_format($glh5->gia)}}đ
+                                                                        </option>
+                                                                    @endforeach
                                                                 </select>
 
 
-                                                                <button
-                                                                    class="button-orange shadow-button-orange ripple-magic"
-                                                                    ng-click="toCart('hosting', 20, '',195, '', 'selectPackagePrice5')">
+                                                                <button onclick="location.href='{{route('getHomePage')}}/thanh-toan/hosting/loaihosting={{$hw5->id}}&thoihan='+document.getElementById('selectPackagePrice5').value"
+                                                                        class="button-orange shadow-button-orange ripple-magic button" >
                                                                     Đăng ký ngay
                                                                 </button>
                                                             </div>
@@ -894,7 +751,7 @@
                                                         <p>
                                                             Vui lòng nhập thông tin đầy đủ và chính xác vào bên dưới để
                                                             các hỗ trợ viên của<br>
-                                                            HOSTVN có thể hỗ trợ bạn.
+                                                            HTVIETNAM có thể hỗ trợ bạn.
                                                         </p>
                                                         <button type="button" class="close" data-dismiss="modal"><i
                                                                 class="icon-close text-white"></i></button>
@@ -1100,7 +957,7 @@
                                                         </div>
                                                         <div class="card-box-icon vertical-center">
                                                             <div class="center text-align-right">
-                                                                <img src="../../wp-content/uploads/2019/09/arrow.svg">
+                                                                <img src="{{asset('img/arrow.svg')}}">
                                                             </div>
                                                         </div>
                                                         <div class="clear"></div>
@@ -1121,7 +978,7 @@
                                                         </div>
                                                         <div class="card-box-icon vertical-center">
                                                             <div class="center text-align-right">
-                                                                <img src="../../wp-content/uploads/2019/09/ip.svg">
+                                                                <img src="{{asset('img/ip.svg')}}">
                                                             </div>
                                                         </div>
                                                         <div class="clear"></div>
@@ -1189,7 +1046,7 @@
                                                     <h2>Tiết kiệm chi phí, <span class="cl-blue">Tối đa lợi nhuận kinh doanh</span>
                                                     </h2>
                                                     <p class="intro">
-                                                        Bằng cách lựa chọn sử dụng các gói combo dịch vụ tại HOSTVN </p>
+                                                        Bằng cách lựa chọn sử dụng các gói combo dịch vụ tại HTVIETNAM </p>
                                                 </div>
                                             </div>
                                             <div class="row">
@@ -1197,7 +1054,7 @@
                                                 <div class="col-lg-4 col-md-6 flex-box">
                                                     <div class="combo-box">
                                                         <div class="combo-box-icon">
-                                                            <img src="../../wp-content/uploads/2019/09/combo-x1.svg">
+                                                            <img src="{{asset('img/combo-x1.svg')}}">
                                                         </div>
                                                         <div class="combo-box-content box-content-2">
                                                             <h3>Combo X1</h3>
@@ -1224,7 +1081,7 @@
                                                 <div class="col-lg-4 col-md-6 flex-box">
                                                     <div class="combo-box">
                                                         <div class="combo-box-icon">
-                                                            <img src="../../wp-content/uploads/2019/09/combo-x2.svg">
+                                                            <img src="{{asset('img/combo-x2.svg')}}">
                                                         </div>
                                                         <div class="combo-box-content box-content-2">
                                                             <h3>Combo X2</h3>
@@ -1251,7 +1108,7 @@
                                                 <div class="col-lg-4 col-md-6 flex-box">
                                                     <div class="combo-box">
                                                         <div class="combo-box-icon">
-                                                            <img src="../../wp-content/uploads/2019/09/combo-x3.svg">
+                                                            <img src="{{asset('img/combo-x3.svg')}}">
                                                         </div>
                                                         <div class="combo-box-content box-content-2">
                                                             <h3>Combo X3</h3>
@@ -1293,7 +1150,7 @@
                                                             alt="" width="15%">
                                                         <h2 class="combo-box-title-modal">Đăng ký gói Combo X3</h2>
                                                         <p>
-                                                            Thông tin của bạn sẽ được gửi tới các hỗ trợ viên tại HOSTVN
+                                                            Thông tin của bạn sẽ được gửi tới các hỗ trợ viên tại HTVIETNAM
                                                             để hỗ trợ đăng ký và kích hoạt dịch vụ.
                                                         </p>
                                                         <button type="button"
@@ -1420,7 +1277,7 @@
                                                 <div class="col-12 text-align-center">
                                                     <h2>TÍNH NĂNG <span class="cl-blue">NỔI BẬT</span></h2>
                                                     <p class="intro">Các tính năng vượt trội của Hosting Windows tại
-                                                        HOSTVN ảnh hưởng rất lớn đến sự lựa chọn của khách hàng.</p>
+                                                        HTVIETNAM ảnh hưởng rất lớn đến sự lựa chọn của khách hàng.</p>
                                                 </div>
                                             </div>
                                             <div class="row product-why-choice-list">
@@ -1430,7 +1287,7 @@
                                                      title="Phần mềm quản trị Plesk 12 được cài đặt sẵn trên các máy chủ Shared Hosting Windows giúp bạn có một giao diện quản lý trực quan với tính năng vượt trội.">
                                                     <div class="product-why-choice-image">
                                                         <img
-                                                            src="../../wp-content/uploads/2019/09/parallels-plesk-2.svg">
+                                                            src="{{asset('img/parallels-plesk-2.svg')}}">
                                                     </div>
                                                     <div class="product-why-choice-title">
                                                         <h3>Plesk <span class="cl-blue">chuyên nghiệp</span></h3>
@@ -1442,15 +1299,15 @@
                                                 </div>
                                                 <div class="col-md-4 col-sm-6 product-why-choice" data-toggle="tooltip"
                                                      data-placement="top"
-                                                     title="Hosting Windows tại HOSTVN được thiết lập cơ chế backup dữ liệu định kỳ 14 ngày liên tiếp, đảm bảo an toàn cũng như hạn chế rủi ro khi sự cố xảy ra.">
+                                                     title="Hosting Windows tại HTVIETNAM được thiết lập cơ chế backup dữ liệu định kỳ 14 ngày liên tiếp, đảm bảo an toàn cũng như hạn chế rủi ro khi sự cố xảy ra.">
                                                     <div class="product-why-choice-image">
-                                                        <img src="../../wp-content/uploads/2019/09/page.svg">
+                                                        <img src="{{asset('img/page.svg')}}">
                                                     </div>
                                                     <div class="product-why-choice-title">
                                                         <h3>Backup <span class=cl-blue>14 ngày </span>liên tiếp</h3>
                                                     </div>
                                                     <div class="product-why-choice-content">
-                                                        Hosting Windows tại HOSTVN được thiết lập cơ chế backup dữ liệu
+                                                        Hosting Windows tại HTVIETNAM được thiết lập cơ chế backup dữ liệu
                                                         định kỳ <b>14 ngày</b> liên tiếp
                                                     </div>
                                                 </div>
@@ -1458,7 +1315,7 @@
                                                      data-placement="top"
                                                      title="Cảm nhận sự khác biệt của máy chủ được cấu hình tối ưu hóa với <b>07 ngày</b> sử dụng miễn phí trước khi sử dụng chính thức.">
                                                     <div class="product-why-choice-image">
-                                                        <img src="../../wp-content/uploads/2019/09/7days.svg">
+                                                        <img src="{{asset('img/7days.svg')}}">
                                                     </div>
                                                     <div class="product-why-choice-title">
                                                         <h3>Dùng thử <span class="cl-blue">07 ngày</span></h3>
@@ -1528,7 +1385,7 @@
                                                 <div class="col-12 text-align-center">
                                                     <h2>Thông số kỹ thuật</h2>
                                                     <p class="intro">Thông số chi tiết các gói dịch vụ Hosting đang được
-                                                        cung cấp tại HOSTVN</p>
+                                                        cung cấp tại HTVIETNAM</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -1747,7 +1604,7 @@
                                             <div class="row">
                                                 <div class="col-lg-6 col-md-12 compare-intro-left">
                                                     <div class="center text-align-right">
-                                                        <img src="../../wp-content/uploads/2019/09/rocket.svg">
+                                                        <img src="{{asset('img/rocket.svg')}}">
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-6 col-md-12 compare-intro-right vertical-center">
@@ -1937,7 +1794,7 @@
                                                                 nâng cấp lên gói Hosting Windows cao hơn trong quá trình
                                                                 sử dụng không?</h3>
                                                             <span
-                                                                ng-bind-html="showQuestionContent('collapseQ3', 'Bạn dễ dàng nâng cấp lên gói Hosting Windows cao hơn mà không gặp bất cứ khó khăn hay gián đoạn nào. Đội ngũ kỹ thuật tại HOSTVN sẽ hỗ trợ bạn nâng cấp.')|trust"></span>
+                                                                ng-bind-html="showQuestionContent('collapseQ3', 'Bạn dễ dàng nâng cấp lên gói Hosting Windows cao hơn mà không gặp bất cứ khó khăn hay gián đoạn nào. Đội ngũ kỹ thuật tại HTVIETNAM sẽ hỗ trợ bạn nâng cấp.')|trust"></span>
                                                             <div class="question-box-icon-btn">
                                                                 <i class="icon-download-1 arrow-icon"
                                                                    data-toggle="collapse"
@@ -1954,10 +1811,10 @@
                                                              data-parent="#accordionQuestion">
                                                             <h3 data-toggle="collapse" data-target="#collapseQ5"
                                                                 ng-click="setQuestionActive('collapseQ5')">Tôi muốn
-                                                                chuyển Hosting từ nhà cung cấp khác về HOSTVN thì phải
+                                                                chuyển Hosting từ nhà cung cấp khác về HTVIETNAM thì phải
                                                                 làm sao?</h3>
                                                             <span
-                                                                ng-bind-html="showQuestionContent('collapseQ5', 'Để chuyển Hosting về HOSTVN, khách hàng chỉ cần gửi ticket tới phòng kỹ thuật cung cấp thông tin hosting cũ hoặc link backup dữ liệu. Đội ngũ kỹ thuật sẽ hỗ trợ bạn chuyển dữ liệu hoàn toàn miễn phí.')|trust"></span>
+                                                                ng-bind-html="showQuestionContent('collapseQ5', 'Để chuyển Hosting về HTVIETNAM, khách hàng chỉ cần gửi ticket tới phòng kỹ thuật cung cấp thông tin hosting cũ hoặc link backup dữ liệu. Đội ngũ kỹ thuật sẽ hỗ trợ bạn chuyển dữ liệu hoàn toàn miễn phí.')|trust"></span>
                                                             <div class="question-box-icon-btn">
                                                                 <i class="icon-download-1 arrow-icon"
                                                                    data-toggle="collapse"
@@ -1996,10 +1853,10 @@
                                                              data-parent="#accordionQuestion">
                                                             <h3 data-toggle="collapse" data-target="#collapseQ2"
                                                                 ng-click="setQuestionActive('collapseQ2')">Shared
-                                                                Hosting Windows tại HOSTVN sử dụng hệ điều hành nào và
+                                                                Hosting Windows tại HTVIETNAM sử dụng hệ điều hành nào và
                                                                 hỗ trợ mã nguồn gì?</h3>
                                                             <span
-                                                                ng-bind-html="showQuestionContent('collapseQ2', 'Hosting Windows tại HOSTVN sử dụng hệ điều hành Window Server 2012 R2 được cài đặt các ứng dụng mã nguồn lập trình cho ASP hoặc ASP.NET (.NET 4.6.1, MVC 1-2-3-4-5, NETCORE 1.0…) cùng với hệ thống cơ sở dữ liệu MSSQL (2012), phù hợp với hầu hết các mã nguồn mở phổ biến trên thế giới hiện nay.')|trust"></span>
+                                                                ng-bind-html="showQuestionContent('collapseQ2', 'Hosting Windows tại HTVIETNAM sử dụng hệ điều hành Window Server 2012 R2 được cài đặt các ứng dụng mã nguồn lập trình cho ASP hoặc ASP.NET (.NET 4.6.1, MVC 1-2-3-4-5, NETCORE 1.0…) cùng với hệ thống cơ sở dữ liệu MSSQL (2012), phù hợp với hầu hết các mã nguồn mở phổ biến trên thế giới hiện nay.')|trust"></span>
                                                             <div class="question-box-icon-btn">
                                                                 <i class="icon-download-1 arrow-icon"
                                                                    data-toggle="collapse"
@@ -2019,7 +1876,7 @@
                                                                 lưu trữ bao nhiêu website trên Hosting Windows của
                                                                 tôi?</h3>
                                                             <span
-                                                                ng-bind-html="showQuestionContent('collapseQ4', 'Hosting Windows tại HOSTVN có nhiều gói với thông số cấu hình khác nhau. Số lượng Wesite bạn có thể lưu trữ thêm ngoài tên miền chính phụ thuộc vào số Addon Domain của gói Hosting Windows bạn chọn.')|trust"></span>
+                                                                ng-bind-html="showQuestionContent('collapseQ4', 'Hosting Windows tại HTVIETNAM có nhiều gói với thông số cấu hình khác nhau. Số lượng Wesite bạn có thể lưu trữ thêm ngoài tên miền chính phụ thuộc vào số Addon Domain của gói Hosting Windows bạn chọn.')|trust"></span>
                                                             <div class="question-box-icon-btn">
                                                                 <i class="icon-download-1 arrow-icon"
                                                                    data-toggle="collapse"
@@ -2038,7 +1895,7 @@
                                                                 ng-click="setQuestionActive('collapseQ6')">Tôi có thể
                                                                 quản trị website cũng như database bằng cách nào?</h3>
                                                             <span
-                                                                ng-bind-html="showQuestionContent('collapseQ6', 'Hosting Windows tại HOSTVN sử dụng phần mềm quản trị Plesk của Odin - một phần mềm được sử dụng phổ biến nhất trên thế giới giúp bạn có một giao diện quản lý trực quan, dễ dàng với nhiều tính năng ưu việt trên môi trường Windows.')|trust"></span>
+                                                                ng-bind-html="showQuestionContent('collapseQ6', 'Hosting Windows tại HTVIETNAM sử dụng phần mềm quản trị Plesk của Odin - một phần mềm được sử dụng phổ biến nhất trên thế giới giúp bạn có một giao diện quản lý trực quan, dễ dàng với nhiều tính năng ưu việt trên môi trường Windows.')|trust"></span>
                                                             <div class="question-box-icon-btn">
                                                                 <i class="icon-download-1 arrow-icon"
                                                                    data-toggle="collapse"
@@ -2057,7 +1914,7 @@
                                                                 ng-click="setQuestionActive('collapseQ8')">Dữ liệu
                                                                 website của tôi có được backup thường xuyên không?</h3>
                                                             <span
-                                                                ng-bind-html="showQuestionContent('collapseQ8', 'Hơn ai hết, chúng tôi hiểu được tầm quan trọng của việc đảm bảo an toàn thông tin, bảo mật dữ liệu cho khách hàng. Vì vậy dữ liệu của khách hàng sử dụng dịch vụ hosting tại HOSTVN sẽ luôn được đảm bảo an toàn với cơ chế backup dữ liệu hàng ngày.')|trust"></span>
+                                                                ng-bind-html="showQuestionContent('collapseQ8', 'Hơn ai hết, chúng tôi hiểu được tầm quan trọng của việc đảm bảo an toàn thông tin, bảo mật dữ liệu cho khách hàng. Vì vậy dữ liệu của khách hàng sử dụng dịch vụ hosting tại HTVIETNAM sẽ luôn được đảm bảo an toàn với cơ chế backup dữ liệu hàng ngày.')|trust"></span>
                                                             <div class="question-box-icon-btn">
                                                                 <i class="icon-download-1 arrow-icon"
                                                                    data-toggle="collapse"
@@ -2158,7 +2015,7 @@
                                                                 nhận được câu trả lời.</p>
                                                         </div>
                                                         <div class="advisory-box-option">
-                                                            <a href="mailto:kinhdoanh@hostvn.net">
+                                                            <a href="mailto:kinhdoanh@HTVIETNAM.net">
                                                                 <button type="button"
                                                                         class="button button-large shadow-button ">
                                                                     Gửi yêu cầu<i class="icon-next"></i></button>
@@ -2177,10 +2034,10 @@
                                                         <div class="advisory-box-content">
                                                             <h3>Gửi Ticket</h3>
                                                             <p>Kênh tiếp nhận yêu cầu hỗ trợ dịch vụ dành cho khách hàng
-                                                                của HOSTVN.</p>
+                                                                của HTVIETNAM.</p>
                                                         </div>
                                                         <div class="advisory-box-option">
-                                                            <a href="https://manage.hostvn.net/submitticket.php">
+                                                            <a href="https://manage.HTVIETNAM.net/submitticket.php">
                                                                 <button type="button"
                                                                         class="button button-large shadow-button ">
                                                                     Tạo Ticket<i class="icon-next"></i></button>
@@ -2247,7 +2104,7 @@
                                                         <p>
                                                             Vui lòng nhập thông tin đầy đủ và chính xác vào bên dưới để
                                                             các hỗ trợ viên của<br>
-                                                            HOSTVN có thể hỗ trợ bạn.
+                                                            HTVIETNAM có thể hỗ trợ bạn.
                                                         </p>
                                                         <button type="button" class="close" data-dismiss="modal"><i
                                                                 class="icon-close text-white"></i></button>

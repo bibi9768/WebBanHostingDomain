@@ -1,5 +1,5 @@
 @extends('user.master1')
-@section('title','Xác nhận thanh toán')
+@section('title','Xác nhận thanh toán Tên miền')
 @section('content')
 
     <section

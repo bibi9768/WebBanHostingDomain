@@ -356,9 +356,8 @@
                                                                 </select>
 
 
-                                                                <button
-                                                                    class="button-orange shadow-button-orange ripple-magic"
-                                                                    ng-click="toCart('hosting', 16, '',177, '', 'selectPackagePrice1')">
+                                                                <button onclick="location.href='{{route('getHomePage')}}/thanh-toan/hosting/loaihosting={{$lh1->id}}&thoihan='+document.getElementById('selectPackagePrice1').value"
+                                                                        class="button-orange shadow-button-orange ripple-magic button" >
                                                                     Đăng ký ngay
                                                                 </button>
                                                             </div>
@@ -423,9 +422,8 @@
                                                                 </select>
 
 
-                                                                <button
-                                                                    class="button-orange shadow-button-orange ripple-magic"
-                                                                    ng-click="toCart('hosting', 16, '',89, '', 'selectPackagePrice2')">
+                                                                <button onclick="location.href='{{route('getHomePage')}}/thanh-toan/hosting/loaihosting={{$lh2->id}}&thoihan='+document.getElementById('selectPackagePrice2').value"
+                                                                        class="button-orange shadow-button-orange ripple-magic button" >
                                                                     Đăng ký ngay
                                                                 </button>
                                                             </div>
@@ -490,9 +488,8 @@
                                                                 </select>
 
 
-                                                                <button
-                                                                    class="button-orange shadow-button-orange ripple-magic"
-                                                                    ng-click="toCart('hosting', 16, '',90, '', 'selectPackagePrice3')">
+                                                                <button onclick="location.href='{{route('getHomePage')}}/thanh-toan/hosting/loaihosting={{$lh3->id}}&thoihan='+document.getElementById('selectPackagePrice3').value"
+                                                                        class="button-orange shadow-button-orange ripple-magic button" >
                                                                     Đăng ký ngay
                                                                 </button>
                                                             </div>
@@ -557,9 +554,8 @@
                                                                 </select>
 
 
-                                                                <button
-                                                                    class="button-orange shadow-button-orange ripple-magic"
-                                                                    ng-click="toCart('hosting', 16, '',91, '', 'selectPackagePrice4')">
+                                                                <button onclick="location.href='{{route('getHomePage')}}/thanh-toan/hosting/loaihosting={{$lh4->id}}&thoihan='+document.getElementById('selectPackagePrice4').value"
+                                                                        class="button-orange shadow-button-orange ripple-magic button" >
                                                                     Đăng ký ngay
                                                                 </button>
                                                             </div>
@@ -624,9 +620,8 @@
                                                                 </select>
 
 
-                                                                <button
-                                                                    class="button-orange shadow-button-orange ripple-magic"
-                                                                    ng-click="toCart('hosting', 16, '',92, '', 'selectPackagePrice5')">
+                                                                <button onclick="location.href='{{route('getHomePage')}}/thanh-toan/hosting/loaihosting={{$lh5->id}}&thoihan='+document.getElementById('selectPackagePrice5').value"
+                                                                        class="button-orange shadow-button-orange ripple-magic button" >
                                                                     Đăng ký ngay
                                                                 </button>
                                                             </div>

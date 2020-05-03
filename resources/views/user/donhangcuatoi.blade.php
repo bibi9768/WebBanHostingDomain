@@ -88,6 +88,7 @@
                                                                     <td>@if ($tc->phuongthucthanhtoan==0)
 
                                                                         @endif
+                                                                        Thanh toán trực tuyến
                                                                     </td>
                                                                     <td>@if($tc->trangthaiduyet==0)
                                                                             Đang chờ duyệt

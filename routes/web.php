@@ -18,17 +18,18 @@ Route::group(['middleware' => 'checkauth'], function () {
     Route::post('/dang-nhap', 'UserController@postSignInPage')->name('getSignInPage');
     Route::get('/dang-ky', 'UserController@getSignUpPage')->name('getSignUpPage');
     Route::post('/dang-ky', 'UserController@postSignUpPage')->name('getSignUpPage');
-
     Route::get('/dang-ky-ten-mien-va-thanh-toan/name={name}&domain={domain}', 'UserController@thanhToanTenMien')->name('thanhToanTenMien');
-
 });
 
 Route::group(['middleware' => 'checkloggedin'], function () {
     Route::get('/dang-xuat', 'UserController@getSignOut')->name('signOut');
-    Route::get('/thanh-toan/name={name}&domain={domain}', 'UserController@thanhToanTenMien')->name('ketThucThanhToan');
     Route::get('/ket-thuc-thanh-toan/name={name}&domain={domain}', 'UserController@ketThucThanhToan')->name('ketThucThanhToan');
     Route::post('/ket-thuc-thanh-toan', 'UserController@postKetThucThanhToan')->name('postKetThucThanhToan');
     Route::get('/don-hang-cua-toi', 'UserController@getDonHangCuaToi')->name('getDonHangCuaToi');
+    Route::prefix('/thanh-toan')->group(function () {
+        Route::get('/domain/name={name}&domain={domain}', 'UserController@thanhToanTenMien')->name('getThanhToanDomain');
+        Route::get('/hosting/loaihosting={loai}&thoihan={thoihan}', 'UserController@thanhToanHosting')->name('getThanhToanHosting');
+    });
 });
 
 
