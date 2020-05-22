@@ -347,7 +347,7 @@
 
                                                                 <select name="package_price" id="selectPackagePrice1">
                                                                     @foreach($gialh1 as $glh1)
-                                                                        <option value="{{$glh1->gia}}"
+                                                                        <option value="{{$glh1->sothang}}"
                                                                                 @if($glh1->id==$gialh1[0]->id) selected @endif>{{$glh1->sothang}}
                                                                             tháng =
                                                                             {{number_format($glh1->gia)}}đ
@@ -356,7 +356,7 @@
                                                                 </select>
 
 
-                                                                <button onclick="location.href='{{route('getHomePage')}}/thanh-toan/hosting/loaihosting={{$lh1->id}}&thoihan='+document.getElementById('selectPackagePrice1').value"
+                                                                <button onclick="location.href='{{route('getHomePage')}}/thanh-toan/hosting/loaihosting={{$lh1->id}}&sothang='+document.getElementById('selectPackagePrice1').value"
                                                                         class="button-orange shadow-button-orange ripple-magic button" >
                                                                     Đăng ký ngay
                                                                 </button>
@@ -413,7 +413,7 @@
 
                                                                 <select name="package_price" id="selectPackagePrice2">
                                                                     @foreach($gialh2 as $glh2)
-                                                                        <option value="{{$glh2->gia}}"
+                                                                        <option value="{{$glh2->sothang}}"
                                                                                 @if($glh2->id==$gialh2[0]->id) selected @endif>{{$glh2->sothang}}
                                                                             tháng =
                                                                             {{number_format($glh2->gia)}}đ
@@ -422,7 +422,7 @@
                                                                 </select>
 
 
-                                                                <button onclick="location.href='{{route('getHomePage')}}/thanh-toan/hosting/loaihosting={{$lh2->id}}&thoihan='+document.getElementById('selectPackagePrice2').value"
+                                                                <button onclick="location.href='{{route('getHomePage')}}/thanh-toan/hosting/loaihosting={{$lh2->id}}&sothang='+document.getElementById('selectPackagePrice2').value"
                                                                         class="button-orange shadow-button-orange ripple-magic button" >
                                                                     Đăng ký ngay
                                                                 </button>
@@ -479,7 +479,7 @@
 
                                                                 <select name="package_price" id="selectPackagePrice3">
                                                                     @foreach($gialh3 as $glh3)
-                                                                        <option value="{{$glh3->gia}}"
+                                                                        <option value="{{$glh3->sothang}}"
                                                                                 @if($glh3->id==$gialh3[0]->id) selected @endif>{{$glh3->sothang}}
                                                                             tháng =
                                                                             {{number_format($glh3->gia)}}đ
@@ -488,7 +488,7 @@
                                                                 </select>
 
 
-                                                                <button onclick="location.href='{{route('getHomePage')}}/thanh-toan/hosting/loaihosting={{$lh3->id}}&thoihan='+document.getElementById('selectPackagePrice3').value"
+                                                                <button onclick="location.href='{{route('getHomePage')}}/thanh-toan/hosting/loaihosting={{$lh3->id}}&sothang='+document.getElementById('selectPackagePrice3').value"
                                                                         class="button-orange shadow-button-orange ripple-magic button" >
                                                                     Đăng ký ngay
                                                                 </button>
@@ -545,7 +545,7 @@
 
                                                                 <select name="package_price" id="selectPackagePrice4">
                                                                     @foreach($gialh4 as $glh4)
-                                                                        <option value="{{$glh4->gia}}"
+                                                                        <option value="{{$glh4->sothang}}"
                                                                                 @if($glh4->id==$gialh4[0]->id) selected @endif>{{$glh4->sothang}}
                                                                             tháng =
                                                                             {{number_format($glh4->gia)}}đ
@@ -554,7 +554,7 @@
                                                                 </select>
 
 
-                                                                <button onclick="location.href='{{route('getHomePage')}}/thanh-toan/hosting/loaihosting={{$lh4->id}}&thoihan='+document.getElementById('selectPackagePrice4').value"
+                                                                <button onclick="location.href='{{route('getHomePage')}}/thanh-toan/hosting/loaihosting={{$lh4->id}}&sothang='+document.getElementById('selectPackagePrice4').value"
                                                                         class="button-orange shadow-button-orange ripple-magic button" >
                                                                     Đăng ký ngay
                                                                 </button>
@@ -611,7 +611,7 @@
 
                                                                 <select name="package_price" id="selectPackagePrice5">
                                                                     @foreach($gialh5 as $glh5)
-                                                                        <option value="{{$glh5->gia}}"
+                                                                        <option value="{{$glh5->sothang}}"
                                                                                 @if($glh5->id==$gialh1[0]->id) selected @endif>{{$glh5->sothang}}
                                                                             tháng =
                                                                             {{number_format($glh5->gia)}}đ
@@ -620,7 +620,7 @@
                                                                 </select>
 
 
-                                                                <button onclick="location.href='{{route('getHomePage')}}/thanh-toan/hosting/loaihosting={{$lh5->id}}&thoihan='+document.getElementById('selectPackagePrice5').value"
+                                                                <button onclick="location.href='{{route('getHomePage')}}/thanh-toan/hosting/loaihosting={{$lh5->id}}&sothang='+document.getElementById('selectPackagePrice5').value"
                                                                         class="button-orange shadow-button-orange ripple-magic button" >
                                                                     Đăng ký ngay
                                                                 </button>

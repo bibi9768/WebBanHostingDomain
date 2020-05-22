@@ -3744,7 +3744,7 @@ input[type=checkbox].check-style:checked ~ label:before {
 }
 
 .banner-wrap-compact {
-    margin-top: 80px;
+
 }
 
 @media (max-width: 992px) {
@@ -5810,6 +5810,7 @@ img {
 
 .ct-domain-search-box-round input {
     border-radius: 60px 0 0 60px;
+    padding-left: 5%;
 }
 
 .ct-domain-search-box-round .button-search {

@@ -57,17 +57,17 @@
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-6">
                         <div class="footer-box">
-                            <h3>Hướng dẫn sử dụng</h3>
-                            <ul>
-                                <li><a href="https://kb.hostvn.net/web-hosting-2">Kiến thức về Web Hosting</a></li>
-                                <li><a href="https://kb.hostvn.net/ten-mien-1">Kiến thức về Tên miền</a></li>
-                                <li><a href="https://kb.hostvn.net/cloud-vps-may-chu-ao-11">Kiến thức về Cloud VPS</a>
-                                </li>
-                                <li><a href="https://kb.hostvn.net/server-47">Kiến thức về Máy chủ</a></li>
-                                <li><a href="https://kb.hostvn.net/">Câu hỏi thường gặp</a></li>
-                                <li><a href="https://kb.hostvn.net/huong-dan-mo-ticket-yeu-cau-ho-tro_142.html">Hướng
-                                        dẫn gửi Ticket hỗ trợ</a></li>
-                            </ul>
+{{--                            <h3>Hướng dẫn sử dụng</h3>--}}
+{{--                            <ul>--}}
+{{--                                <li><a href="https://kb.hostvn.net/web-hosting-2">Kiến thức về Web Hosting</a></li>--}}
+{{--                                <li><a href="https://kb.hostvn.net/ten-mien-1">Kiến thức về Tên miền</a></li>--}}
+{{--                                <li><a href="https://kb.hostvn.net/cloud-vps-may-chu-ao-11">Kiến thức về Cloud VPS</a>--}}
+{{--                                </li>--}}
+{{--                                <li><a href="https://kb.hostvn.net/server-47">Kiến thức về Máy chủ</a></li>--}}
+{{--                                <li><a href="https://kb.hostvn.net/">Câu hỏi thường gặp</a></li>--}}
+{{--                                <li><a href="https://kb.hostvn.net/huong-dan-mo-ticket-yeu-cau-ho-tro_142.html">Hướng--}}
+{{--                                        dẫn gửi Ticket hỗ trợ</a></li>--}}
+{{--                            </ul>--}}
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-12">

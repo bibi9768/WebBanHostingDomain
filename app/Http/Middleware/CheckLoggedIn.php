@@ -19,6 +19,6 @@ class CheckLoggedIn
         if (Auth::check()) {
             return $next($request);
         }
-        return redirect()->route('');
+        return redirect()->route('getSignInPage');
     }
 }

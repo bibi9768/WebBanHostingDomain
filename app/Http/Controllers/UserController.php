@@ -133,7 +133,7 @@ class UserController extends Controller
         $giahw3 = ChiTietHosting::where('idhosting', $hw3->id)->get();
         $giahw4 = ChiTietHosting::where('idhosting', $hw4->id)->get();
         $giahw5 = ChiTietHosting::where('idhosting', $hw5->id)->get();
-        return view('user.hostingwindows',compact('hw1','hw2','hw3','hw4','hw5','giahw1','giahw2','giahw3','giahw4','giahw5'));
+        return view('user.hostingwindows', compact('hw1', 'hw2', 'hw3', 'hw4', 'hw5', 'giahw1', 'giahw2', 'giahw3', 'giahw4', 'giahw5'));
     }
 
     public function kiemTraTenMien($name, $domain)
@@ -210,13 +210,16 @@ class UserController extends Controller
         $dacbiet = Domain::where('loai', '0')->take(14)->get();
         $tatca = Domain::all();
         $gia = Domain::where('domain', $domain)->select('phiduytrimoinam')->first()->phiduytrimoinam;
-        return view('user.thanhtoan', compact('gia', 'quocte', 'vietnam', 'dacbiet', 'tatca', 'domaininfo', 'fulldomain', 'name', 'domain'));
+        return view('user.thanhtoandomain', compact('gia', 'quocte', 'vietnam', 'dacbiet', 'tatca', 'domaininfo', 'fulldomain', 'name', 'domain'));
     }
 
-    public function thanhToanHosting($loai, $thoihan)
+    public function thanhToanHosting($loai, $sothang)
     {
-        dd($loai.$thoihan);
-         return view('user.thanhtoan', compact('gia', 'quocte', 'vietnam', 'dacbiet', 'tatca', 'domaininfo', 'fulldomain', 'name', 'domain'));
+        $hosting = Hosting::where('id', $loai)->first();
+        $gia = ChiTietHosting::where('idhosting', $hosting->id)->where('sothang', $sothang)->get()[0]->gia;
+
+
+        return view('user.thanhtoanhosting', compact('hosting', 'sothang', 'gia'));
     }
 
 
@@ -229,7 +232,6 @@ class UserController extends Controller
 
     public function ketThucThanhToan($name, $domain)
     {
-
         if (!Auth::check())
             return redrect()->route('getHomePage');
 
@@ -238,6 +240,7 @@ class UserController extends Controller
         $vietnam = Domain::where('loai', '2')->take(14)->get();
         $dacbiet = Domain::where('loai', '0')->take(14)->get();
         $tatca = Domain::all();
+
         return view('user.ketthucthanhtoan', compact('quocte', 'vietnam', 'dacbiet', 'tatca', 'domaininfo', 'fulldomain', 'name', 'domain'));
     }
 
@@ -269,7 +272,6 @@ class UserController extends Controller
     public function getDonHangCuaToi()
     {
         $tatcadonhang = HoaDonDomain::where('idnguoidung', Auth::User()->id)->get();
-
         return view('user.donhangcuatoi', compact('tatcadonhang'));
     }
 }

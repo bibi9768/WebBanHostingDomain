@@ -1,5 +1,5 @@
 @extends('user.master1')
-@section('title','Xác nhận thanh toán Hosting')
+@section('title','Xác nhận thanh toán')
 @section('content')
 
     <section
@@ -60,8 +60,8 @@
                                                     <form action="{{route('postThanhToanPayPal')}}" method="post">
                                                         @csrf
                                                         <h2><h1>BẠN ĐANG ĐĂNG KÝ <span
-                                                                    class="cl-blue">GÓI HOSTING </span><span
-                                                                    class="cl-orange">{{strtoupper($hosting->tengoi)}}</span>
+                                                                    class="cl-blue">TÊN MIỀN </span><span
+                                                                    class="cl-orange">{{strtoupper($name)}}{{strtoupper($domain)}}</span>
                                                             </h1></h2>
                                                         <p class="intro no-margin">Hãy tiến hành xác nhận và lựa chọn
                                                             phương thức thanh toán.</p>
@@ -74,24 +74,26 @@
                                                         <p>Số điện thoại:</p>
                                                         <input type="text" name="sodienthoai"
                                                                value="{{Auth::User()->sodienthoai}}">
-                                                        <p>Số tháng:</p>
-                                                        <b><p>{{$sothang }} tháng</p></b>
-                                                        <p>Giá:</p>
+                                                        <p>Giá mỗi năm:</p>
                                                         <b><p>{{number_format($gia) }} VNĐ</p></b>
                                                         <input type="text" name="gia"
                                                                value="{{$gia}}" hidden>
-                                                        <input type="text" name="hosting"
-                                                               value="{{$hosting->tengoi}}" hidden>
-                                                        <input type="text" name="sothang"
-                                                               value="{{$sothang }}" hidden>
+                                                        <input type="text" name="name"
+                                                               value="{{$name}}" hidden>
+                                                        <input type="text" name="domain"
+                                                               value="{{$domain}}" hidden>
                                                         <input type="text" name="type"
-                                                               value="hosting" hidden>
+                                                               value="domain" hidden>
                                                         <p>Phương thức thanh toán :</p>
                                                         <input type="radio" id="PayPal" name="PayPal" value="PayPal"
                                                                checked>
                                                         <label for="PayPal">PayPal</label><br>
                                                         <input type="submit" class="btn btn-info" value="Xác nhận">
-
+                                                        <p>Mã giảm giá:</p>
+                                                        <input type="text" name="magiamgia"
+                                                               value="">
+                                                        <button type="button" class="button button-search ripple-magic"
+                                                                onclick="">Áp dụng</button>
 
                                                     </form>
 
@@ -100,7 +102,230 @@
 
 
                                             </div>
+                                            <div class="row">
+                                                <div class="col-lg-12" ng-controller="ListData"
+                                                     ng-init="loaderInit('domain-extension')">
+                                                    <div class="ct-domain-search-box ct-domain-search-box-round">
+                                                        <input type="text" id="tenmien"
+                                                               placeholder="Nhập tên bạn muốn đăng ký"
 
+                                                               value="{{$name}}"
+                                                        >
+
+
+                                                        <select id="domainlist">
+                                                            @foreach($tatca as $tc)
+                                                                @if($domain == $tc->domain)
+                                                                    <option value="{{$tc->domain}}"
+                                                                            selected>{{$tc->domain}}</option>
+                                                                @else
+                                                                    <option
+                                                                        value="{{$tc->domain}}">{{$tc->domain}}</option>
+                                                                @endif
+                                                            @endforeach
+                                                        </select>
+                                                        {{--                                                        <button class="button-extensions" type="button"--}}
+                                                        {{--                                                                ng-click="domainExtensionsWrapP=!domainExtensionsWrapP">--}}
+                                                        {{--                                                            <i class="icon-upload" ng-show="domainExtensionsWrapP"></i>--}}
+                                                        {{--                                                            <i class="icon-download-1"--}}
+                                                        {{--                                                               ng-show="!domainExtensionsWrapP"></i>--}}
+                                                        {{--                                                        </button>--}}
+                                                        {{--                                                        <a type="button" class="button button-search ripple-magic" href="{{route('getHomePage')}}/kiem-tra-ten-mien/">--}}
+                                                        {{--                                                            <i class="icon-magnifier"></i><span>Tra cứu</span>--}}
+                                                        {{--                                                        </a>--}}
+                                                        <button type="button" class="button button-search ripple-magic"
+                                                                onclick="domainChecker()">
+                                                            <i class="icon-magnifier"></i><span>Tra cứu</span>
+                                                        </button>
+                                                        <script>
+                                                            function domainChecker() {
+                                                                var tenmien = document.getElementById('tenmien').value;
+                                                                var domain = document.getElementById('domainlist').value;
+                                                                location.href = '{{route('getHomePage')}}/kiem-tra-ten-mien/name=' + tenmien + '&domain=' + domain;
+                                                            }
+                                                        </script>
+
+                                                    </div>
+
+                                                    <div class="domain-search-dd-wrap clearfix"
+                                                         ng-if="(tldChecker|isNotEmpty) && checkValueById('domain2')">
+                                                        <h2>Kết quả tìm kiếm</h2>
+                                                        <hr>
+                                                        <div class="clearfix">
+                                                            <div class="domain-list"
+                                                                 ng-repeat="result in domainCheckerResult"
+                                                                 ng-init="getCustomData('checkdomain59bb.html?domain=' + domain + tld)"
+                                                                 style="box-shadow: none">
+                                                                <div class="domain-result-close">
+                                                                    <i class="icon-error"
+                                                                       ng-click="closeDomainSearch()"></i>
+                                                                </div>
+                                                                <div class="domain-list-icon">
+                                                                    <i class="icon-check cl-green"
+                                                                       ng-if="result.available==true"></i>
+                                                                    <i class="icon-cancel cl-red"
+                                                                       ng-if="result.available==false"></i>
+                                                                </div>
+
+
+                                                                <div class="domain-list-content">
+                                                                    <p>
+                                                                        <strong>{{$domaininfo['message']}}</strong>
+                                                                        <br>
+                                                                        <span ng-if="result.available==true">Giá năm đầu: <span
+                                                                                class="domain-search-price">{{--result.pricing.domainregister.year_1|price--}} VNĐ</span></span>
+                                                                        <span ng-if="result.available==false">Không đăng ký được</span>
+                                                                    </p>
+                                                                </div>
+                                                                <div class="domain-list-option">
+                                                                    <p class="text-align-right">
+                                                                        <a href="https://manage.HTVIETNAM.net/cart.php?type=domain&amp;sld={{--result.name--}}&amp;tld={{--result.ext--}}"
+                                                                           target="_blank">
+                                                                            <i class="icon-commerce-and-shopping"
+                                                                               ng-if="result.available==true"></i>
+                                                                        </a>
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="div-loading" ng-show="domainChecking"></div>
+                                                    </div>
+
+                                                    <div class="domain-extensions-dd-wrap clearfix"
+                                                         ng-show="domainExtensionsWrapP">
+                                                        <strong>Tên miền Việt Nam</strong>
+                                                        <ul>
+                                                            <li ng-repeat="domain in datas"
+                                                                ng-if="domain.extension|isDomainVN">
+                                                                <input type="checkbox" class="check-style" name="tlds[]"
+                                                                       id="tld{{--domain.extension--}}"
+                                                                       value="{{--domain.extension--}}"
+                                                                       ng-checked="tldDefault.includes(domain.extension)">
+                                                                <label
+                                                                    for="tld{{--domain.extension--}}">{{--domain.extension--}}</label>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="clear"></div>
+                                                        <strong>Tên miền Quốc tế</strong>
+                                                        <ul>
+                                                            <li ng-repeat="domain in datas"
+                                                                ng-if="!(domain.extension|isDomainVN)">
+                                                                <input type="checkbox" class="check-style" name="tlds[]"
+                                                                       id="tld{{--domain.extension--}}"
+                                                                       value="{{--domain.extension--}}"
+                                                                       ng-checked="tldDefault.includes(domain.extension)">
+                                                                <label
+                                                                    for="tld{{--domain.extension--}}">{{--domain.extension--}}</label>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="col-lg-12" ng-init="ExtensionsShow='all'">
+                                                    <div class="domain-tabs-wrap">
+                                                        <button type="button" ng-click="ExtensionsShow='all'"
+                                                                class="button domain-tab-button"
+                                                                ng-class="{'domain-tab-button-active':ExtensionsShow=='all'}">
+                                                            Tất cả tên miền
+                                                        </button>
+                                                        <button type="button" ng-click="ExtensionsShow='global'"
+                                                                class="button domain-tab-button"
+                                                                ng-class="{'domain-tab-button-active':ExtensionsShow=='global'}">
+                                                            Tên miền quốc tế
+                                                        </button>
+                                                        <button type="button" ng-click="ExtensionsShow='vn'"
+                                                                class="button domain-tab-button"
+                                                                ng-class="{'domain-tab-button-active':ExtensionsShow=='vn'}">
+                                                            Tên miền Việt Nam
+                                                        </button>
+                                                        <button type="button" ng-click="ExtensionsShow='special'"
+                                                                class="button domain-tab-button"
+                                                                ng-class="{'domain-tab-button-active':ExtensionsShow=='special'}">
+                                                            Tên miền đặc biệt
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    <div class="domain-extensions-list">
+
+
+                                                        @foreach($quocte as $qt)
+                                                            <div class="domain-extensions-item"
+                                                                 ng-if="ExtensionsShow=='global' || ExtensionsShow=='all'">
+                                                                <div class="domain-extensions-content">
+                                                                    <div class="domain-extensions-content-left">
+                                                                        <strong><span
+                                                                                class="cl-blue">{{$qt->domain}}</span></strong>
+                                                                        {{number_format($qt->phidangkynamdau)}}đ
+                                                                    </div>
+                                                                    <div class="domain-extensions-content-right">
+                                                                        Gia hạn: <span
+                                                                            class="cl-blue">{{number_format($qt->phiduytrimoinam)}}                                                đ</span>
+                                                                        <br>
+                                                                        <button type="button"
+                                                                                class="button button-orange btn-buy">Mua
+                                                                            ngay
+                                                                        </button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        @endforeach
+                                                        @foreach($vietnam as $vn)
+
+                                                            <div class="domain-extensions-item"
+                                                                 ng-if="ExtensionsShow=='vn' || ExtensionsShow=='all'">
+                                                                <div class="domain-extensions-content">
+                                                                    <div class="domain-extensions-ribbon"><i
+                                                                            class="icon-star-1"></i></div>
+                                                                    <div class="domain-extensions-content-left">
+                                                                        <strong><span
+                                                                                class="cl-red">{{$vn->domain}}</span></strong>
+                                                                        {{number_format($vn->phidangkynamdau)}}đ
+                                                                    </div>
+                                                                    <div class="domain-extensions-content-right">
+                                                                        Gia hạn: <span
+                                                                            class="cl-blue">{{number_format($vn->phiduytrimoinam)}}                                                đ</span>
+                                                                        <br>
+
+                                                                        <button type="button"
+                                                                                class="button button-orange btn-buy">Mua
+                                                                            ngay
+                                                                        </button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        @endforeach
+
+
+                                                        @foreach($dacbiet as $db)
+                                                            <div class="domain-extensions-item"
+                                                                 ng-if="ExtensionsShow=='special' || ExtensionsShow=='all'">
+                                                                <div class="domain-extensions-content">
+                                                                    <div class="domain-extensions-content-left">
+                                                                        <strong><span
+                                                                                class="cl-grey">{{$db->domain}}</span></strong>
+                                                                        {{number_format($db->phidangkynamdau)}}đ
+                                                                    </div>
+                                                                    <div class="domain-extensions-content-right">
+                                                                        Gia hạn: <span
+                                                                            class="cl-blue">{{number_format($db->phiduytrimoinam)}}                                                đ</span>
+                                                                        <br>
+                                                                        <button type="button"
+                                                                                class="button button-orange btn-buy">Mua
+                                                                            ngay
+                                                                        </button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        @endforeach
+
+
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                     <!-- end domain pricing 2 -->

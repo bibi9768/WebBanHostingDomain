@@ -39,7 +39,7 @@
                                                             </li>
 
                                                             <li>
-                                                                <a href="{{route('getSignInPage')}}"><i
+                                                                <a href=""><i
                                                                         class="icon-user-shape"></i><span>Chào bạn <b>{{Auth::User()->hoten}}, </b></span></a>
                                                                 <a href="{{route('signOut')}}"><span>thoát</span></a>
                                                             </li>
@@ -95,7 +95,7 @@
                                                                                                 </a>
                                                                                             </li>
                                                                                             <li>
-                                                                                                <a href="https://manage.hostvn.net/cart.php?a=add&amp;domain=register&amp;currency=2">
+                                                                                                <a href="{{route('getBangGiaTenMien')}}">
                                                                                                     <i class="icon-commerce-and-shopping"></i>
                                                                                                     <div
                                                                                                         class="menu-text">
@@ -109,7 +109,7 @@
                                                                                                 </a>
                                                                                             </li>
                                                                                             <li>
-                                                                                                <a href="https://manage.hostvn.net/clientarea.php?action=domains&amp;currency=2">
+                                                                                                <a href="{{route('getDonHangCuaToi')}}">
                                                                                                     <i class="icon-calendar-with-a-clock-time-tools"></i>
                                                                                                     <div
                                                                                                         class="menu-text">
@@ -121,23 +121,7 @@
                                                                                                     </div>
                                                                                                 </a>
                                                                                             </li>
-                                                                                            {{--                                                                                            <li>--}}
-                                                                                            {{--                                                                                                <a href="https://manage.hostvn.net/cart.php?type=domain">--}}
-                                                                                            {{--                                                                                                    <i class="icon-transfer"></i>--}}
-                                                                                            {{--                                                                                                    <div--}}
-                                                                                            {{--                                                                                                        class="menu-text">--}}
-                                                                                            {{--                                                                                                        <h3>Chuyển đổi--}}
-                                                                                            {{--                                                                                                            tên--}}
-                                                                                            {{--                                                                                                            miền </h3>--}}
-                                                                                            {{--                                                                                                        <br>--}}
-                                                                                            {{--                                                                                                        Giảm ngay 20%--}}
-                                                                                            {{--                                                                                                        khi chuyển tên--}}
-                                                                                            {{--                                                                                                        miền về--}}
-                                                                                            {{--                                                                                                        HTVIETNAM--}}
-                                                                                            {{--                                                                                                    </div>--}}
-                                                                                            {{--                                                                                                </a>--}}
-                                                                                            {{--                                                                                            </li>--}}
-                                                                                        </ul>
+                                                                                             </ul>
                                                                                     </div>
                                                                                     <div class="col-md-6 hosta-col">
                                                                                         <h2>Thông tin cần biết</h2>
@@ -157,65 +141,17 @@
                                                                                                     </div>
                                                                                                 </a>
                                                                                             </li>
-                                                                                            {{--                                                                                            <li>--}}
-                                                                                            {{--                                                                                                <a href="https://kb.hostvn.net/ten-mien-1/">--}}
-                                                                                            {{--                                                                                                    <i class="icon-idea"></i>--}}
-                                                                                            {{--                                                                                                    <div--}}
-                                                                                            {{--                                                                                                        class="menu-text">--}}
-                                                                                            {{--                                                                                                        <h3>Hướng dẫn sử--}}
-                                                                                            {{--                                                                                                            dụng tên--}}
-                                                                                            {{--                                                                                                            miền </h3>--}}
-                                                                                            {{--                                                                                                        <br>--}}
-                                                                                            {{--                                                                                                        Tài liệu hướng--}}
-                                                                                            {{--                                                                                                        dẫn sử dụng tên--}}
-                                                                                            {{--                                                                                                        miền--}}
-                                                                                            {{--                                                                                                    </div>--}}
-                                                                                            {{--                                                                                                </a>--}}
-                                                                                            {{--                                                                                            </li>--}}
-                                                                                            {{--                                                                                            <li>--}}
-                                                                                            {{--                                                                                                <a href="https://blog.hostvn.net/chia-se/7-tieu-chi-de-lua-chon-ten-mien-dep-nhat.html">--}}
-                                                                                            {{--                                                                                                    <i class="icon-help"></i>--}}
-                                                                                            {{--                                                                                                    <div--}}
-                                                                                            {{--                                                                                                        class="menu-text">--}}
-                                                                                            {{--                                                                                                        <h3>Tư vấn chọn--}}
-                                                                                            {{--                                                                                                            tên--}}
-                                                                                            {{--                                                                                                            miền </h3>--}}
-                                                                                            {{--                                                                                                        <br>--}}
-                                                                                            {{--                                                                                                        Chia sẻ kinh--}}
-                                                                                            {{--                                                                                                        nghiệm chọn tên--}}
-                                                                                            {{--                                                                                                        miền--}}
-                                                                                            {{--                                                                                                    </div>--}}
-                                                                                            {{--                                                                                                </a>--}}
-                                                                                            {{--                                                                                            </li>--}}
-                                                                                            {{--                                                                                            <li>--}}
-                                                                                            {{--                                                                                                <a href="ten-mien/thoa-thuan-dang-ky-ten-mien/index.html">--}}
-                                                                                            {{--                                                                                                    <i class="icon-law"></i>--}}
-                                                                                            {{--                                                                                                    <div--}}
-                                                                                            {{--                                                                                                        class="menu-text">--}}
-                                                                                            {{--                                                                                                        <h3>Quy định sử--}}
-                                                                                            {{--                                                                                                            dụng </h3>--}}
-                                                                                            {{--                                                                                                        <br>--}}
-                                                                                            {{--                                                                                                        Những quy định--}}
-                                                                                            {{--                                                                                                        cần biết khi sử--}}
-                                                                                            {{--                                                                                                        dụng tên miền--}}
-                                                                                            {{--                                                                                                    </div>--}}
-                                                                                            {{--                                                                                                </a>--}}
-                                                                                            {{--                                                                                            </li>--}}
-                                                                                        </ul>
+                                                                                               </ul>
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
                                                                         </div>
-                                                                        <div class="menu-box-hinfo">
-                                                                            <a href="ten-mien270e.html?p=domain-combo">
-                                                                                <img src="{{asset('img/ComboX1.png')}}">
-                                                                            </a>
-                                                                        </div>
+
                                                                     </div>
                                                                 </div>
                                                             </li>
                                                             <li>
-                                                                <a href="web-hosting/index.html"
+                                                                <a href="{{route('getWordpressHosting')}}"
                                                                    class="a-inner-bottom-arrow"><i
                                                                         class="icon-download-1 arrow-down"></i>Web
                                                                     Hosting </a>
@@ -390,11 +326,7 @@
                                                                                 </div>
                                                                             </div>
                                                                         </div>
-                                                                        <div class="menu-box-hinfo">
-                                                                            <a href="web-hosting/hosting-linuxdce2.html?p=hl-combo">
-                                                                                <img src="{{asset('img/ComboX2.png')}}">
-                                                                            </a>
-                                                                        </div>
+
                                                                     </div>
                                                                 </div>
                                                             </li>

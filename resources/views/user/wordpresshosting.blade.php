@@ -82,10 +82,10 @@
                                                 <div class="col-lg-8 col-md-12">
                                                     <div class="breadcrumb-nav">
 
-                                                        <a href="../index.html">
+                                                        <a href="{{route('getWordpressHosting')}}">
                                                             <i class="icon-home"></i><span>Trang chủ</span>
                                                         </a>
-                                                        <a href="index.html">
+                                                        <a href="{{route('getWordpressHosting')}}">
                                                             <i class="icon-arrow-right-circle"></i><span>Web Hosting</span>
                                                         </a>
                                                         <i class="icon-arrow-right-circle"></i>
@@ -329,7 +329,7 @@
                                                                 <strong id="packagePrice1">
                                                                     {{number_format($wp1->giabatdautu)}}
                                                                 </strong>
-                                                                <span ng-if="packagePrice1">vnđ/tháng</span>
+                                                                <span>vnđ/tháng</span>
                                                             </div>
                                                             <div class="package-body">
                                                                 <ul style="text-align: left;">
@@ -384,7 +384,7 @@
 
                                                                 <select name="package_price" id="selectPackagePrice1">
                                                                     @foreach($giawp1 as $gwp1)
-                                                                        <option value="{{$gwp1->gia}}"
+                                                                        <option value="{{$gwp1->sothang}}"
                                                                                 @if($gwp1->id==$giawp1[0]->id) selected @endif>{{$gwp1->sothang}}
                                                                             tháng =
                                                                             {{number_format($gwp1->gia)}}đ
@@ -393,7 +393,7 @@
                                                                 </select>
 
 
-                                                                <button onclick="location.href='{{route('getHomePage')}}/thanh-toan/hosting/loaihosting={{$wp1->id}}&thoihan='+document.getElementById('selectPackagePrice1').value"
+                                                                <button onclick="location.href='{{route('getHomePage')}}/thanh-toan/hosting/loaihosting={{$wp1->id}}&sothang='+document.getElementById('selectPackagePrice1').value"
                                                                         class="button-orange shadow-button-orange ripple-magic button" >
                                                                     Đăng ký ngay
                                                                 </button>
@@ -415,7 +415,7 @@
                                                                 <strong id="packagePrice2">
                                                                     {{number_format($wp2->giabatdautu)}}
                                                                 </strong>
-                                                                <span ng-if="packagePrice2">vnđ/tháng</span>
+                                                                <span>vnđ/tháng</span>
                                                             </div>
                                                             <div class="package-body">
                                                                 <ul style="text-align: left;">
@@ -471,7 +471,7 @@
                                                                 <select name="package_price" id="selectPackagePrice2"
                                                                 >
                                                                     @foreach($giawp2 as $gwp2)
-                                                                        <option value="{{$gwp2->gia}}"
+                                                                        <option value="{{$gwp2->sothang}}"
                                                                                 @if($gwp2->id==$giawp2[0]->id) selected @endif>{{$gwp2->sothang}}
                                                                             tháng =
                                                                             {{number_format($gwp2->gia)}}đ
@@ -480,7 +480,7 @@
                                                                 </select>
 
 
-                                                                <button onclick="location.href='{{route('getHomePage')}}/thanh-toan/hosting/loaihosting={{$wp2->id}}&thoihan='+document.getElementById('selectPackagePrice2').value"
+                                                                <button onclick="location.href='{{route('getHomePage')}}/thanh-toan/hosting/loaihosting={{$wp2->id}}&sothang='+document.getElementById('selectPackagePrice2').value"
                                                                         class="button-orange shadow-button-orange ripple-magic button" >
                                                                     Đăng ký ngay
                                                                 </button>
@@ -496,7 +496,7 @@
                                                                 <strong id="packagePrice3">
                                                                     {{number_format($wp3->giabatdautu)}}
                                                                 </strong>
-                                                                <span ng-if="packagePrice3">vnđ/tháng</span>
+                                                                <span>vnđ/tháng</span>
                                                             </div>
                                                             <div class="package-body">
                                                                 <ul style="text-align: left;">
@@ -552,7 +552,7 @@
                                                                 <select name="package_price" id="selectPackagePrice3"
                                                                 >
                                                                     @foreach($giawp3 as $gwp3)
-                                                                        <option value="{{$gwp3->gia}}"
+                                                                        <option value="{{$gwp3->sothang}}"
                                                                                 @if($gwp3->id==$giawp3[0]->id) selected @endif>{{$gwp3->sothang}}
                                                                             tháng =
                                                                             {{number_format($gwp3->gia)}}đ
@@ -560,7 +560,7 @@
                                                                     @endforeach
                                                                 </select>
 
-                                                                <button onclick="location.href='{{route('getHomePage')}}/thanh-toan/hosting/loaihosting={{$wp3->id}}&thoihan='+document.getElementById('selectPackagePrice3').value"
+                                                                <button onclick="location.href='{{route('getHomePage')}}/thanh-toan/hosting/loaihosting={{$wp3->id}}&sothang='+document.getElementById('selectPackagePrice3').value"
                                                                     class="button-orange shadow-button-orange ripple-magic button" >
                                                                     Đăng ký ngay
                                                                 </button>
@@ -571,7 +571,7 @@
                                             </div>
                                             <div class="row">
                                                 <div class="col-lg-12 text-align-center" style="padding-top: 10px">
-                                                    <span class="cl-gray">* Giá trên chưa bao gồm VAT. Các ưu đãi đi kèm không được áp dụng đồng thời với ưu đãi từ các chương trình khuyến mãi khác.</span>
+                                                    <span class="cl-gray">* Giá trên đã bao gồm VAT. Các ưu đãi đi kèm không được áp dụng đồng thời với ưu đãi từ các chương trình khuyến mãi khác.</span>
                                                 </div>
                                             </div>
                                             <div class="row">
@@ -756,212 +756,7 @@
             </div>
         </div>
     </section>
-    <section
-        class="elementor-element elementor-element-9e42c34 elementor-section-full_width elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section"
-        data-id="9e42c34" data-element_type="section">
-        <div class="elementor-container elementor-column-gap-default">
-            <div class="elementor-row">
-                <div
-                    class="elementor-element elementor-element-d653a20 elementor-column elementor-col-100 elementor-top-column"
-                    data-id="d653a20" data-element_type="column">
-                    <div class="elementor-column-wrap  elementor-element-populated">
-                        <div class="elementor-widget-wrap">
-                            <div
-                                class="elementor-element elementor-element-2ddd368 elementor-widget elementor-widget-product-combo-2"
-                                data-id="2ddd368" data-element_type="widget" data-widget_type="product-combo-2.default">
-                                <div class="elementor-widget-container">
-                                    <!-- begin product combo 2 -->
-                                    <div class="main-wrap  combo-wrap-3"
-                                         style="">
-                                        <div class="container">
-                                            <div class="row">
-                                                <div class="col-12 text-align-center">
-                                                    <h2>Tiết kiệm chi phí, <span class="cl-blue">Tối đa lợi nhuận kinh doanh</span>
-                                                    </h2>
-                                                    <p class="intro">
-                                                        Bằng cách lựa chọn sử dụng các gói combo dịch vụ tại
-                                                        HTVIETNAM </p>
-                                                </div>
-                                            </div>
-                                            <div class="row">
 
-                                                <div class="col-lg-4 col-md-6 flex-box">
-                                                    <div class="combo-box">
-                                                        <div class="combo-box-icon">
-                                                            <img src="{{asset('img/combo-x1.svg')}}">
-                                                        </div>
-                                                        <div class="combo-box-content box-content-2">
-                                                            <h3>Combo X1</h3>
-                                                            <span class="discount-label">Giảm ngay 10%</span>
-                                                            <div class="product-introduction-wrap"
-                                                                 style="padding: 0 !important;">
-                                                                <div class="combo-box-desc"
-                                                                     style="padding: 0 !important;">
-                                                                    <p>Khi đăng ký đồng thời tên miền Việt Nam và tên
-                                                                        miền Quốc tế.</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="combo-box-option">
-                                                            <button type="button"
-                                                                    class="button button-large shadow-button prduct-combo-btn"
-                                                                    data-toggle="modal" data-target="#OpenModalCombo"
-                                                                    id="" data-service="33">
-                                                                Đăng ký ngay<i class="icon-next"></i>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-4 col-md-6 flex-box">
-                                                    <div class="combo-box">
-                                                        <div class="combo-box-icon">
-                                                            <img src="{{asset('img/combo-x2.svg')}}">
-                                                        </div>
-                                                        <div class="combo-box-content box-content-2">
-                                                            <h3>Combo X2</h3>
-                                                            <span class="discount-label">Giảm ngay 15%</span>
-                                                            <div class="product-introduction-wrap"
-                                                                 style="padding: 0 !important;">
-                                                                <div class="combo-box-desc"
-                                                                     style="padding: 0 !important;">
-                                                                    <p>Khi đăng ký đồng thời Tên miền + Hosting với thời
-                                                                        hạn tối thiểu 01 năm.</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="combo-box-option">
-                                                            <button type="button"
-                                                                    class="button button-large shadow-button prduct-combo-btn"
-                                                                    data-toggle="modal" data-target="#OpenModalCombo"
-                                                                    id="" data-service="34">
-                                                                Đăng ký ngay<i class="icon-next"></i>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-4 col-md-6 flex-box">
-                                                    <div class="combo-box">
-                                                        <div class="combo-box-icon">
-                                                            <img src="{{asset('img/combo-x3.svg')}}">
-                                                        </div>
-                                                        <div class="combo-box-content box-content-2">
-                                                            <h3>Combo X3</h3>
-                                                            <span class="discount-label">Giảm ngay 20%</span>
-                                                            <div class="product-introduction-wrap"
-                                                                 style="padding: 0 !important;">
-                                                                <div class="combo-box-desc"
-                                                                     style="padding: 0 !important;">
-                                                                    <p>Khi đăng ký Tên miền + Hosting + Email với thời
-                                                                        hạn tối thiểu 01 năm.</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="combo-box-option">
-                                                            <button type="button"
-                                                                    class="button button-large shadow-button prduct-combo-btn"
-                                                                    data-toggle="modal" data-target="#OpenModalCombo"
-                                                                    id="" data-service="35">
-                                                                Đăng ký ngay<i class="icon-next"></i>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- end product combo 2 -->
-
-
-                                    <!--Open Modal -->
-                                    <div class="modal fade modalCombo" id="OpenModalCombo" tabindex='-1'>
-                                        <div class="modal-dialog modal-dialog-centered modal-dialog-register">
-                                            <form id="mauTicForm">
-                                                <div class="modal-content">
-                                                    <div class="modal-header">
-                                                        <img src="{{asset('img/combo-1.png')}}" alt="" width="15%">
-                                                        <h2 class="combo-box-title-modal">Đăng ký gói Combo X3</h2>
-                                                        <p>
-                                                            Thông tin của bạn sẽ được gửi tới các hỗ trợ viên tại
-                                                            HTVIETNAM
-                                                            để hỗ trợ đăng ký và kích hoạt dịch vụ.
-                                                        </p>
-                                                        <button type="button"
-                                                                class="close close-modal-product-combo text-white"
-                                                                data-dismiss="modal"><i class="icon-close"></i></button>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                        <div class="container">
-                                                            <div class="label-wrap">
-                                                                <form id="mauTicForm">
-                                                                    <div class="row">
-                                                                        <div class="col-md-6">
-                                                                            <label>Họ và tên</label>
-                                                                            <input type="text" placeholder="Nhập họ tên"
-                                                                                   required name="mauticform[fullname]"
-                                                                                   class="mauticform_combo2_fullname">
-                                                                            <span hidden
-                                                                                  class="mauticform_combo2_fullname_error text-danger"></span>
-                                                                        </div>
-
-                                                                        <div class="col-md-6">
-                                                                            <label>Số điện thoại</label>
-                                                                            <input type="text"
-                                                                                   placeholder="Nhập số điện thoại của bạn"
-                                                                                   required name="mauticform[phone]"
-                                                                                   class="mauticform_combo2_phone">
-                                                                            <span hidden
-                                                                                  class="mauticform_combo2_phone_error text-danger"></span>
-                                                                        </div>
-
-                                                                        <div class="col">
-                                                                            <label>Địa chỉ email</label>
-                                                                            <input type="email"
-                                                                                   placeholder="Nhập email của bạn"
-                                                                                   required name="mauticform[email]"
-                                                                                   class="mauticform_combo2_email">
-                                                                        </div>
-
-                                                                        <input type="hidden" name="mauticform[services]"
-                                                                               class="mauticform_services mauticform_combo2_services"
-                                                                               value="Hosting Linux" autocomplete="off">
-                                                                        <input type="hidden" name="mauticform[formId]"
-                                                                               class="mauticform_id mauticform_combo2_formId"
-                                                                               value="22" autocomplete="off">
-                                                                        <input type="hidden" name="mauticform[return]"
-                                                                               class="mauticform_return mauticform_combo2_return"
-                                                                               value="" autocomplete="off">
-                                                                        <input type="hidden" name="mauticform[formName]"
-                                                                               class="mauticform_name mauticform_combo2_formName"
-                                                                               value="dangkydungthu" autocomplete="off">
-                                                                        <input type="hidden"
-                                                                               name="mauticform[messenger]"
-                                                                               class="mauticform_messenger mauticform_combo2_messager"
-                                                                               value="1">
-                                                                    </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="modal-footer">
-                                                        <button type="button" class="button button-large shadow-button"
-                                                                data-dismiss=""
-                                                                ng-click="mauTicPost('mauticform_combo2')">
-                                                            Đăng ký ngay<i class="icon-arrow-pointing-to-right"></i>
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                            </form>
-                                        </div>
-                                    </div>
-                                    <!-- end product combo -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
     <section
         class="elementor-element elementor-element-ad87d11 elementor-section-full_width elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section"
         data-id="ad87d11" data-element_type="section">

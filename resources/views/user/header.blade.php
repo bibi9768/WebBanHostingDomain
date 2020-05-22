@@ -142,7 +142,7 @@
                                                                                         <h2>Thông tin cần biết</h2>
                                                                                         <ul>
                                                                                             <li>
-                                                                                                <a href="ten-mien.html">
+                                                                                                <a href="{{route('getQuanLyTenMien')}}">
                                                                                                     <i class="icon-magnifier"></i>
                                                                                                     <div
                                                                                                         class="menu-text">

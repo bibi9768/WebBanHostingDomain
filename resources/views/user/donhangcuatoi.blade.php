@@ -69,6 +69,7 @@
                                                                 <th>Ngày đặt</th>
                                                                 <th>Hình thức thanh toán</th>
                                                                 <th>Trạng thái xử lý</th>
+                                                                <th>In Hoá Đơn</th>
                                                             </tr>
                                                             </thead>
                                                             <tbody>
@@ -96,14 +97,21 @@
                                                                             Đã duyệt
                                                                         @endif
                                                                     </td>
-
+                                                                    <td>
+                                                                        <button onclick="PrintElem('in')">In</button>
+                                                                    </td>
                                                                 </tr>
                                                             @endforeach
                                                             </tbody>
 
                                                         </table>
-
-
+                                                        <div id="in"></div>
+                                                        <script>
+                                                            function PrintElem(elem) {
+                                                                window.print();
+                                                            }
+                                                        </script>
+                                                        <button onclick="window.print()">In Hoá Đơn của tôi</button>
                                                     </div>
 
 
