@@ -120,13 +120,13 @@
                                                                     </p>
                                                                 </div>
                                                                 <div class="domain-list-option">
-                                                                    <p class="text-align-right">
-                                                                        <a href="https://manage.HTVIETNAM.net/cart.php?type=domain&amp;sld={{--result.name--}}&amp;tld={{--result.ext--}}"
-                                                                           target="_blank">
-                                                                            <i class="icon-commerce-and-shopping"
-                                                                               ng-if="result.available==true"></i>
-                                                                        </a>
-                                                                    </p>
+{{--                                                                    <p class="text-align-right">--}}
+{{--                                                                        <a href="https://manage.HTVIETNAM.net/cart.php?type=domain&amp;sld=--}}{{--result.name--}}{{--&amp;tld=--}}{{--result.ext--}}{{--"--}}
+{{--                                                                           target="_blank">--}}
+{{--                                                                            <i class="icon-commerce-and-shopping"--}}
+{{--                                                                               ng-if="result.available==true"></i>--}}
+{{--                                                                        </a>--}}
+{{--                                                                    </p>--}}
                                                                 </div>
                                                             </div>
                                                         </div>

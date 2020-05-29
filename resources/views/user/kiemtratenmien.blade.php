@@ -322,290 +322,302 @@
                                                             });
                                                         });
                                                     </script>
-                                                    <style>
-                                                        .dm_khung {
-                                                            width: 100%;
-                                                            height: auto;
-                                                            border: solid 1px #CCCCCC;
-                                                            font-size: 14px;
-                                                        }
-
-                                                        .dm_khung table {
-                                                            width: 98%;
-                                                            margin: 10px auto 10px auto;
-                                                            border: none;
-                                                        }
-
-                                                        .dm_khung_td {
-                                                            width: 90px;
-                                                            padding: 10px;
-                                                            font-weight: bold;
-                                                            text-align: left;
-                                                        }
-
-                                                        .dm_khung_com {
-                                                            padding: 10px;
-                                                            font-weight: bold;
-                                                            text-align: left;
-                                                        }
-
-                                                        .dm_domain_text {
-                                                            width: 98%;
-                                                            height: 60px;
-                                                            padding: 10px;
-                                                        }
-
-                                                        .dm_khung_nut {
-                                                            width: 185px;
-                                                            border: solid 1px #CCCCCC;
-                                                            line-height: 80px;
-                                                            text-align: center;
-                                                            font-weight: bold;
-                                                            font-size: 24px;
-                                                            background-color: #F3F3F3;
-                                                        }
-
-                                                        .hightlight {
-                                                            background-color: #FF6;
-                                                        }
-
-                                                        .esco_check_domain li {
-                                                            list-style: decimal;
-                                                        }
-
-                                                        .esco_check_domain li a {
-                                                            text-decoration: none;
-                                                            color: #00F;
-                                                        }
-
-                                                        .esco_check_domain .domain_roi {
-                                                            color: #F00;
-                                                            font-weight: bold;
-                                                            text-decoration: none;
-                                                            text-decoration: line-through;
-                                                        }
-
-                                                        .esco_check_domain .domain_chua {
-                                                            color: #3C0;
-                                                            font-weight: bold;
-                                                            text-decoration: none;
-                                                        }
-
-                                                        .by {
-                                                            width: 300px;
-                                                            bottom: 5px;
-                                                            right: 5px;
-                                                            position: absolute;
-                                                        }
-
-                                                        .by a {
-                                                            color: #06F;
-                                                            text-decoration: none;
-                                                        }
-
-                                                        .by a:hover {
-                                                            color: #F00;
-                                                            text-decoration: underline;
-                                                        }
-                                                    </style>
-                                                    <style>
-                                                        input[type=radio] {
-                                                            border: 0px;
-                                                            width: 100%;
-                                                            height: 2em;
-                                                        }
-                                                    </style>
-
-                                                    <div class="dm_khung">
-                                                        <h2>Tìm kiếm nâng cao</h2>
-                                                        <table cellpadding="0" cellspacing="0">
-                                                            <tr>
-                                                                <td class="dm_khung_td">
-                                                                    <input
-                                                                        title="Click chọn hoặc bỏ tất cả domain phổ biến..!"
-                                                                        class="phobien" name="phobien" type="checkbox"
-                                                                        value="-1"/>
-                                                                    Phổ biến
-                                                                </td>
-                                                                <td class="dm_khung_com">
-                                                                    <input title=".com" class="pb" name="com"
-                                                                           type="checkbox" value=".com"/>.com
-                                                                    <input title=".net" class="pb" name="net"
-                                                                           type="checkbox" value=".net"/>.net
-                                                                    <input title=".org" class="pb" name="org"
-                                                                           type="checkbox" value=".org"/>.org
-                                                                    <input title=".vn" class="pb" name="vn"
-                                                                           type="checkbox" value=".vn"/>.vn
-                                                                    <input title=".com.vn" class="pb" name="comvn"
-                                                                           type="checkbox" value=".com.vn"/>.com.vn
-                                                                    <input title=".net.vn" class="pb" name="netvn"
-                                                                           type="checkbox" value=".net.vn"/>.net.vn
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="dm_khung_td">
-                                                                    <input
-                                                                        title="Click chọn hoặc bỏ tất cả domain Việt Nam..!"
-                                                                        class="vietnam" name="vietnam" type="checkbox"
-                                                                        value="-2"/>
-                                                                    Việt Nam
-                                                                </td>
-                                                                <td class="dm_khung_com">
-                                                                    @foreach($vietnam as $vn)
-                                                                        <input title="{{$vn->domain}}" class="dvn"
-                                                                               name="{{$vn->domain}}"
-                                                                               type="checkbox"
-                                                                               value="{{$vn->domain}}"/>{{$vn->domain}}
-                                                                    @endforeach
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="dm_khung_td">
-                                                                    <input
-                                                                        title="Click chọn hoặc bỏ tất cả domain quốc tế..!"
-                                                                        class="quocte" name="quocte" type="checkbox"
-                                                                        value="-3"/>
-                                                                    Quốc tế
-                                                                </td>
-                                                                <td class="dm_khung_com">
-                                                                    @foreach($quocte as $qt)
-                                                                        <input title="{{$qt->domain}}" class="qt"
-                                                                               name="{{$qt->domain}}" type="checkbox"
-                                                                               value="{{$qt->domain}}"/>{{$qt->domain}}
-                                                                    @endforeach
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="dm_khung_td">
-                                                                    <div class="dm_khung_nut"
-                                                                         title="Click kiểm tra domain..!">Kiểm tra
-                                                                    </div>
-                                                                </td>
-                                                                <td class="dm_khung_com">
-                                                                    <textarea class="dm_domain_text" name="domain"
-                                                                              placeholder="Domain cách nhau bằng dấu phẩy(,) nếu bạn nhập domain có domain.(*) thì hệ thống chỉ check domain.(*) đó, nếu domain không .(*) thì hệ thống check theo .(*) bạn chọn phía trên."></textarea>
-                                                                </td>
-                                                            </tr>
-                                                        </table>
-                                                    </div>
-                                                    <ul class="esco_check_domain"></ul>
 
 
-                                                </div>
-
-
-                                                <div class="col-lg-12" ng-init="ExtensionsShow='all'">
-                                                    <div class="domain-tabs-wrap">
-                                                        <button type="button" ng-click="ExtensionsShow='all'"
-                                                                class="button domain-tab-button"
-                                                                ng-class="{'domain-tab-button-active':ExtensionsShow=='all'}">
-                                                            Tất cả tên miền
-                                                        </button>
-                                                        <button type="button" ng-click="ExtensionsShow='global'"
-                                                                class="button domain-tab-button"
-                                                                ng-class="{'domain-tab-button-active':ExtensionsShow=='global'}">
-                                                            Tên miền quốc tế
-                                                        </button>
-                                                        <button type="button" ng-click="ExtensionsShow='vn'"
-                                                                class="button domain-tab-button"
-                                                                ng-class="{'domain-tab-button-active':ExtensionsShow=='vn'}">
-                                                            Tên miền Việt Nam
-                                                        </button>
-                                                        <button type="button" ng-click="ExtensionsShow='special'"
-                                                                class="button domain-tab-button"
-                                                                ng-class="{'domain-tab-button-active':ExtensionsShow=='special'}">
-                                                            Tên miền đặc biệt
-                                                        </button>
+                                                    <div class="col-lg-12" ng-init="ExtensionsShow='all'">
+                                                        <div class="domain-tabs-wrap">
+                                                            <button type="button" ng-click="ExtensionsShow='all'"
+                                                                    class="button domain-tab-button"
+                                                                    ng-class="{'domain-tab-button-active':ExtensionsShow=='all'}">
+                                                                Tất cả tên miền
+                                                            </button>
+                                                            <button type="button" ng-click="ExtensionsShow='global'"
+                                                                    class="button domain-tab-button"
+                                                                    ng-class="{'domain-tab-button-active':ExtensionsShow=='global'}">
+                                                                Tên miền quốc tế
+                                                            </button>
+                                                            <button type="button" ng-click="ExtensionsShow='vn'"
+                                                                    class="button domain-tab-button"
+                                                                    ng-class="{'domain-tab-button-active':ExtensionsShow=='vn'}">
+                                                                Tên miền Việt Nam
+                                                            </button>
+                                                            <button type="button" ng-click="ExtensionsShow='special'"
+                                                                    class="button domain-tab-button"
+                                                                    ng-class="{'domain-tab-button-active':ExtensionsShow=='special'}">
+                                                                Tên miền đặc biệt
+                                                            </button>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-lg-12">
-                                                    <div class="domain-extensions-list">
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <div class="domain-extensions-list">
 
 
-                                                        @foreach($quocte as $qt)
-                                                            <div class="domain-extensions-item"
-                                                                 ng-if="ExtensionsShow=='global' || ExtensionsShow=='all'">
-                                                                <div class="domain-extensions-content">
-                                                                    <div class="domain-extensions-content-left">
-                                                                        <strong><span
-                                                                                class="cl-blue">{{$qt->domain}}</span></strong>
-                                                                        {{number_format($qt->phidangkynamdau)}}đ
-                                                                    </div>
-                                                                    <div class="domain-extensions-content-right">
-                                                                        Gia hạn: <span
-                                                                            class="cl-blue">{{number_format($qt->phiduytrimoinam)}}                                                đ</span>
-                                                                        <br>
-                                                                        <button type="button"
-                                                                                class="button button-orange btn-buy">Mua
-                                                                            ngay
-                                                                        </button>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        @endforeach
-                                                        @foreach($vietnam as $vn)
-
-                                                            <div class="domain-extensions-item"
-                                                                 ng-if="ExtensionsShow=='vn' || ExtensionsShow=='all'">
-                                                                <div class="domain-extensions-content">
-                                                                    <div class="domain-extensions-ribbon"><i
-                                                                            class="icon-star-1"></i></div>
-                                                                    <div class="domain-extensions-content-left">
-                                                                        <strong><span
-                                                                                class="cl-red">{{$vn->domain}}</span></strong>
-                                                                        {{number_format($vn->phidangkynamdau)}}đ
-                                                                    </div>
-                                                                    <div class="domain-extensions-content-right">
-                                                                        Gia hạn: <span
-                                                                            class="cl-blue">{{number_format($vn->phiduytrimoinam)}}                                                đ</span>
-                                                                        <br>
-
-                                                                        <button type="button"
-                                                                                class="button button-orange btn-buy">Mua
-                                                                            ngay
-                                                                        </button>
+                                                            @foreach($quocte as $qt)
+                                                                <div class="domain-extensions-item"
+                                                                     ng-if="ExtensionsShow=='global' || ExtensionsShow=='all'">
+                                                                    <div class="domain-extensions-content">
+                                                                        <div class="domain-extensions-content-left">
+                                                                            <strong><span
+                                                                                    class="cl-blue">{{$qt->domain}}</span></strong>
+                                                                            {{number_format($qt->phidangkynamdau)}}đ
+                                                                        </div>
+                                                                        <div class="domain-extensions-content-right">
+                                                                            Gia hạn: <span
+                                                                                class="cl-blue">{{number_format($qt->phiduytrimoinam)}}                                                đ</span>
+                                                                            <br>
+                                                                            <button type="button"
+                                                                                    class="button button-orange btn-buy">
+                                                                                Mua
+                                                                                ngay
+                                                                            </button>
+                                                                        </div>
                                                                     </div>
                                                                 </div>
-                                                            </div>
-                                                        @endforeach
+                                                            @endforeach
+                                                            @foreach($vietnam as $vn)
 
+                                                                <div class="domain-extensions-item"
+                                                                     ng-if="ExtensionsShow=='vn' || ExtensionsShow=='all'">
+                                                                    <div class="domain-extensions-content">
+                                                                        <div class="domain-extensions-ribbon"><i
+                                                                                class="icon-star-1"></i></div>
+                                                                        <div class="domain-extensions-content-left">
+                                                                            <strong><span
+                                                                                    class="cl-red">{{$vn->domain}}</span></strong>
+                                                                            {{number_format($vn->phidangkynamdau)}}đ
+                                                                        </div>
+                                                                        <div class="domain-extensions-content-right">
+                                                                            Gia hạn: <span
+                                                                                class="cl-blue">{{number_format($vn->phiduytrimoinam)}}                                                đ</span>
+                                                                            <br>
 
-                                                        @foreach($dacbiet as $db)
-                                                            <div class="domain-extensions-item"
-                                                                 ng-if="ExtensionsShow=='special' || ExtensionsShow=='all'">
-                                                                <div class="domain-extensions-content">
-                                                                    <div class="domain-extensions-content-left">
-                                                                        <strong><span
-                                                                                class="cl-grey">{{$db->domain}}</span></strong>
-                                                                        {{number_format($db->phidangkynamdau)}}đ
-                                                                    </div>
-                                                                    <div class="domain-extensions-content-right">
-                                                                        Gia hạn: <span
-                                                                            class="cl-blue">{{number_format($db->phiduytrimoinam)}}                                                đ</span>
-                                                                        <br>
-                                                                        <button type="button"
-                                                                                class="button button-orange btn-buy">Mua
-                                                                            ngay
-                                                                        </button>
+                                                                            <button type="button"
+                                                                                    class="button button-orange btn-buy">
+                                                                                Mua
+                                                                                ngay
+                                                                            </button>
+                                                                        </div>
                                                                     </div>
                                                                 </div>
-                                                            </div>
-                                                        @endforeach
+                                                            @endforeach
 
 
+                                                            @foreach($dacbiet as $db)
+                                                                <div class="domain-extensions-item"
+                                                                     ng-if="ExtensionsShow=='special' || ExtensionsShow=='all'">
+                                                                    <div class="domain-extensions-content">
+                                                                        <div class="domain-extensions-content-left">
+                                                                            <strong><span
+                                                                                    class="cl-grey">{{$db->domain}}</span></strong>
+                                                                            {{number_format($db->phidangkynamdau)}}đ
+                                                                        </div>
+                                                                        <div class="domain-extensions-content-right">
+                                                                            Gia hạn: <span
+                                                                                class="cl-blue">{{number_format($db->phiduytrimoinam)}}                                                đ</span>
+                                                                            <br>
+                                                                            <button type="button"
+                                                                                    class="button button-orange btn-buy">
+                                                                                Mua
+                                                                                ngay
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            @endforeach
+
+
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
+                                        <!-- end domain pricing 2 -->
                                     </div>
-                                    <!-- end domain pricing 2 -->
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+
+
+        </div>
+    </section>
+    <section>
+        <div class="elementor-container elementor-column-gap-default">
+            <div class="elementor-row" style="margin:0;text-align: center">
+
+                <style>
+                    .dm_khung {
+                        width: 100%;
+                        height: auto;
+                        border: solid 1px #CCCCCC;
+                        font-size: 14px;
+                    }
+
+                    .dm_khung table {
+                        width: 100%;
+                        margin: 10px auto 10px auto;
+                        border: none;
+                    }
+
+                    .dm_khung_td {
+                        width: 90px;
+                        padding: 10px;
+                        font-weight: bold;
+                        text-align: left;
+                    }
+
+                    .dm_khung_com {
+                        padding: 10px;
+                        font-weight: bold;
+                        text-align: left;
+                    }
+
+                    .dm_domain_text {
+                        width: 98%;
+                        height: 60px;
+                        padding: 10px;
+                    }
+
+                    .dm_khung_nut {
+                        width: 185px;
+                        border: solid 1px #CCCCCC;
+                        line-height: 80px;
+                        text-align: center;
+                        font-weight: bold;
+                        font-size: 24px;
+                        background-color: #F3F3F3;
+                    }
+
+                    .hightlight {
+                        background-color: #FF6;
+                    }
+
+                    .esco_check_domain li {
+                        list-style: decimal;
+                    }
+
+                    .esco_check_domain li a {
+                        text-decoration: none;
+                        color: #00F;
+                    }
+
+                    .esco_check_domain .domain_roi {
+                        color: #F00;
+                        font-weight: bold;
+                        text-decoration: none;
+                        text-decoration: line-through;
+                    }
+
+                    .esco_check_domain .domain_chua {
+                        color: #3C0;
+                        font-weight: bold;
+                        text-decoration: none;
+                    }
+
+                    .by {
+                        width: 300px;
+                        bottom: 5px;
+                        right: 5px;
+                        position: absolute;
+                    }
+
+                    .by a {
+                        color: #06F;
+                        text-decoration: none;
+                    }
+
+                    .by a:hover {
+                        color: #F00;
+                        text-decoration: underline;
+                    }
+                </style>
+                <style>
+                    input[type=radio] {
+                        border: 0px;
+                        width: 100%;
+                        height: 2em;
+                    }
+                </style>
+
+                <div class="dm_khung">
+                    <h2>Tìm kiếm nâng cao</h2>
+                    <table cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td class="dm_khung_td">
+                                <input
+                                    title="Click chọn hoặc bỏ tất cả domain phổ biến..!"
+                                    class="phobien" name="phobien" type="checkbox"
+                                    value="-1"/>
+                                Phổ biến
+                            </td>
+                            <td class="dm_khung_com">
+                                <input title=".com" class="pb" name="com"
+                                       type="checkbox" value=".com"/>.com
+                                <input title=".net" class="pb" name="net"
+                                       type="checkbox" value=".net"/>.net
+                                <input title=".org" class="pb" name="org"
+                                       type="checkbox" value=".org"/>.org
+                                <input title=".vn" class="pb" name="vn"
+                                       type="checkbox" value=".vn"/>.vn
+                                <input title=".com.vn" class="pb" name="comvn"
+                                       type="checkbox" value=".com.vn"/>.com.vn
+                                <input title=".net.vn" class="pb" name="netvn"
+                                       type="checkbox" value=".net.vn"/>.net.vn
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="dm_khung_td">
+                                <input
+                                    title="Click chọn hoặc bỏ tất cả domain Việt Nam..!"
+                                    class="vietnam" name="vietnam" type="checkbox"
+                                    value="-2"/>
+                                Việt Nam
+                            </td>
+                            <td class="dm_khung_com">
+                                @foreach($vietnam as $vn)
+                                    <input title="{{$vn->domain}}" class="dvn"
+                                           name="{{$vn->domain}}"
+                                           type="checkbox"
+                                           value="{{$vn->domain}}"/>{{$vn->domain}}
+                                @endforeach
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="dm_khung_td">
+                                <input
+                                    title="Click chọn hoặc bỏ tất cả domain quốc tế..!"
+                                    class="quocte" name="quocte" type="checkbox"
+                                    value="-3"/>
+                                Quốc tế
+                            </td>
+                            <td class="dm_khung_com">
+                                @foreach($quocte as $qt)
+                                    <input title="{{$qt->domain}}" class="qt"
+                                           name="{{$qt->domain}}" type="checkbox"
+                                           value="{{$qt->domain}}"/>{{$qt->domain}}
+                                @endforeach
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="dm_khung_td">
+                                <div class="dm_khung_nut"
+                                     title="Click kiểm tra domain..!">Kiểm tra
+                                </div>
+                            </td>
+                            <td class="dm_khung_com">
+                                                                    <textarea class="dm_domain_text" name="domain"
+                                                                              placeholder="Domain cách nhau bằng dấu phẩy(,) nếu bạn nhập domain có domain.(*) thì hệ thống chỉ check domain.(*) đó, nếu domain không .(*) thì hệ thống check theo .(*) bạn chọn phía trên."></textarea>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <ul class="esco_check_domain"></ul>
+
+
             </div>
         </div>
     </section>
@@ -888,13 +900,7 @@
                                                 <div class="col-12">
                                                     <div class="asv-table">
 
-                                                        <div class="header-pro">
-                                                            <div class="header-pro-content">
-                                                                <input type="text" ng-model="search"
-                                                                       placeholder="Tìm kiếm đuôi tên miền"
-                                                                       class="input-search-normal">
-                                                            </div>
-                                                        </div>
+
 
                                                         <div class="asv-row header">
                                                             <div class="cell"><b>Tên miền</b></div>

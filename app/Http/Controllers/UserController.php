@@ -6,6 +6,7 @@ use App\ChiTietHosting;
 use App\Domain;
 use App\HoaDonDomain;
 use App\Hosting;
+use App\MaGiamGia;
 use App\Users;
 use Auth;
 use Carbon\Carbon;
@@ -199,7 +200,7 @@ class UserController extends Controller
         }
     }
 
-    public function thanhToanTenMien($name, $domain) //trang xác nhận thanh toán
+    public function thanhToanTenMien($name, $domain)
     {
         $fulldomain = $name . $domain;
         $domaininfo = $this->checkDomain($fulldomain);
@@ -210,7 +211,30 @@ class UserController extends Controller
         $dacbiet = Domain::where('loai', '0')->take(14)->get();
         $tatca = Domain::all();
         $gia = Domain::where('domain', $domain)->select('phiduytrimoinam')->first()->phiduytrimoinam;
-        return view('user.thanhtoandomain', compact('gia', 'quocte', 'vietnam', 'dacbiet', 'tatca', 'domaininfo', 'fulldomain', 'name', 'domain'));
+        $magiamgia = '';
+        return view('user.thanhtoandomain', compact('gia', 'quocte', 'vietnam', 'dacbiet', 'tatca', 'domaininfo', 'fulldomain', 'name', 'domain', 'magiamgia'));
+    }
+
+    public function thanhToanTenMienGiamGia($name, $domain, $magiam)
+    {
+        $fulldomain = $name . $domain;
+        $domaininfo = $this->checkDomain($fulldomain);
+        if ($domaininfo['status'] == 1)
+            return redirect()->route('getBangGiaTenMien');
+        $quocte = Domain::where('loai', '1')->take(14)->get();
+        $vietnam = Domain::where('loai', '2')->take(14)->get();
+        $dacbiet = Domain::where('loai', '0')->take(14)->get();
+        $tatca = Domain::all();
+        $gia = Domain::where('domain', $domain)->select('phiduytrimoinam')->first()->phiduytrimoinam;
+
+        $magiamgia = MaGiamGia::where('ma', $magiam)->where('thoihan','>=',date("Y-m-d H:i:s"))->first();
+        $giatrigiam = 0;
+        if (count($magiamgia) > 0) {
+            $giatrigiam = $magiamgia->trigia;
+            $giadagiam = $gia - $gia * $giatrigiam / 100;
+        }
+
+        return view('user.thanhtoandomain', compact('gia', 'quocte', 'vietnam', 'dacbiet', 'tatca', 'domaininfo', 'fulldomain', 'name', 'domain', 'magiam', 'giatrigiam', 'giadagiam'));
     }
 
     public function thanhToanHosting($loai, $sothang)

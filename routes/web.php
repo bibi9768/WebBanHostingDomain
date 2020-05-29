@@ -28,6 +28,7 @@ Route::group(['middleware' => 'checkloggedin'], function () {
     Route::get('/don-hang-cua-toi', 'UserController@getDonHangCuaToi')->name('getDonHangCuaToi');
     Route::prefix('/thanh-toan')->group(function () {
         Route::get('/domain/name={name}&domain={domain}', 'UserController@thanhToanTenMien')->name('getThanhToanDomain');
+        Route::get('/domain/name={name}&domain={domain}/magiam={magiam}', 'UserController@thanhToanTenMienGiamGia')->name('getThanhToanDomain');
         Route::get('/hosting/loaihosting={loai}&sothang={sothang}', 'UserController@thanhToanHosting')->name('getThanhToanHosting');
     });
 });
