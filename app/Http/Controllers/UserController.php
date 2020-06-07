@@ -212,7 +212,9 @@ class UserController extends Controller
         $tatca = Domain::all();
         $gia = Domain::where('domain', $domain)->select('phiduytrimoinam')->first()->phiduytrimoinam;
         $magiamgia = '';
-        return view('user.thanhtoandomain', compact('gia', 'quocte', 'vietnam', 'dacbiet', 'tatca', 'domaininfo', 'fulldomain', 'name', 'domain', 'magiamgia'));
+        $giatrigiam = 0;
+        $magiam = '';
+        return view('user.thanhtoandomain', compact('gia', 'quocte', 'vietnam', 'dacbiet', 'tatca', 'domaininfo', 'fulldomain', 'name', 'domain', 'magiamgia','giatrigiam','magiam'));
     }
 
     public function thanhToanTenMienGiamGia($name, $domain, $magiam)
@@ -227,7 +229,7 @@ class UserController extends Controller
         $tatca = Domain::all();
         $gia = Domain::where('domain', $domain)->select('phiduytrimoinam')->first()->phiduytrimoinam;
 
-        $magiamgia = MaGiamGia::where('ma', $magiam)->where('thoihan','>=',date("Y-m-d H:i:s"))->first();
+        $magiamgia = MaGiamGia::where('ma', $magiam)->where('thoihan', '>=', date("Y-m-d H:i:s"))->first();
         $giatrigiam = 0;
         if (count($magiamgia) > 0) {
             $giatrigiam = $magiamgia->trigia;
@@ -241,9 +243,24 @@ class UserController extends Controller
     {
         $hosting = Hosting::where('id', $loai)->first();
         $gia = ChiTietHosting::where('idhosting', $hosting->id)->where('sothang', $sothang)->get()[0]->gia;
+        $magiamgia = '';
+        $giatrigiam = 0;
+        $magiam = '';
+        return view('user.thanhtoanhosting', compact('hosting', 'sothang', 'gia','magiamgia','giatrigiam','magiam'));
+    }
 
+    public function thanhToanHostingGiamGia($loai, $sothang, $magiam)
+    {
+        $hosting = Hosting::where('id', $loai)->first();
+        $gia = ChiTietHosting::where('idhosting', $hosting->id)->where('sothang', $sothang)->get()[0]->gia;
 
-        return view('user.thanhtoanhosting', compact('hosting', 'sothang', 'gia'));
+        $magiamgia = MaGiamGia::where('ma', $magiam)->where('thoihan', '>=', date("Y-m-d H:i:s"))->first();
+        $giatrigiam = 0;
+        if (count($magiamgia) > 0) {
+            $giatrigiam = $magiamgia->trigia;
+            $giadagiam = $gia - $gia * $giatrigiam / 100;
+        }
+        return view('user.thanhtoanhosting', compact('hosting', 'sothang', 'gia', 'giatrigiam', 'giadagiam', 'gia','magiam'));
     }
 
 

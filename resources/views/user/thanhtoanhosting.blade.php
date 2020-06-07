@@ -77,7 +77,17 @@
                                                         <p>Số tháng:</p>
                                                         <b><p>{{$sothang }} tháng</p></b>
                                                         <p>Giá:</p>
-                                                        <b><p>{{number_format($gia) }} VNĐ</p></b>
+                                                        @if($giatrigiam==0)
+                                                            <b><p>{{number_format($gia) }} VNĐ</p></b>
+                                                        @else
+                                                            <b>
+                                                                <p>
+                                                                    <del>{{number_format($gia) }} VNĐ</del>
+                                                                </p>
+                                                            </b>
+                                                            <b><p>{{number_format($giadagiam) }} VNĐ (giảm
+                                                                    <b>{{$giatrigiam}}%)</b></p></b>
+                                                        @endif
                                                         <input type="text" name="gia"
                                                                value="{{$gia}}" hidden>
                                                         <input type="text" name="hosting"
@@ -86,6 +96,21 @@
                                                                value="{{$sothang }}" hidden>
                                                         <input type="text" name="type"
                                                                value="hosting" hidden>
+
+                                                        <p>Mã giảm giá:</p>
+                                                        <input type="text" name="magiam"
+                                                               value="{{$magiam}}">
+                                                        @if($giatrigiam==0 && strlen($magiam)>0)
+                                                            <p>Mã giảm giá không hợp lệ</p>
+                                                        @elseif($giatrigiam>0 && strlen($magiam)>0)
+
+                                                            <p>Đã áp dụng mã giảm giá thành công</p>
+                                                        @endif
+                                                        <button type="button" class="button button-search ripple-magic"
+                                                                onclick="window.location.href='{{route('getHomePage')}}/thanh-toan/hosting/loaihosting={{$hosting->id}}&sothang={{$sothang}}/magiam='+document.getElementsByName('magiam')[0].value;">
+                                                            Áp dụng
+                                                        </button>
+
                                                         <p>Phương thức thanh toán :</p>
                                                         <input type="radio" id="PayPal" name="PayPal" value="PayPal"
                                                                checked>

@@ -30,6 +30,7 @@ Route::group(['middleware' => 'checkloggedin'], function () {
         Route::get('/domain/name={name}&domain={domain}', 'UserController@thanhToanTenMien')->name('getThanhToanDomain');
         Route::get('/domain/name={name}&domain={domain}/magiam={magiam}', 'UserController@thanhToanTenMienGiamGia')->name('getThanhToanDomain');
         Route::get('/hosting/loaihosting={loai}&sothang={sothang}', 'UserController@thanhToanHosting')->name('getThanhToanHosting');
+        Route::get('/hosting/loaihosting={loai}&sothang={sothang}/magiam={magiam}', 'UserController@thanhToanHostingGiamGia')->name('getThanhToanHosting');
     });
 });
 
@@ -70,6 +71,15 @@ Route::prefix('quan-ly')->group(function () {
         Route::get('/them-hosting', 'AdminController@getThemHosting')->name('getThemHosting');
         Route::post('/them-hosting', 'AdminController@postThemHosting')->name('postThemHosting');
         Route::get('/xoa-hosting/{id}', 'AdminController@getXoaHosting')->name('getXoaHosting');
+    });
+
+    Route::prefix('quan-ly-ma-giam-gia')->group(function () {
+        Route::get('/', 'AdminController@getQuanLyMaGiamGia')->name('getQuanLyMaGiamGia');
+        Route::get('/sua-ma-giam-gia/{id}', 'AdminController@getSuaMaGiamGia')->name('getSuaMaGiamGia');
+        Route::post('/sua-ma-giam-gia/{id}', 'AdminController@postSuaMaGiamGia')->name('postSuaMaGiamGia');
+        Route::get('/them-ma-giam-gia', 'AdminController@getThemMaGiamGia')->name('getThemMaGiamGia');
+        Route::post('/them-ma-giam-gia', 'AdminController@postThemMaGiamGia')->name('postThemMaGiamGia');
+        Route::get('/xoa-ma-giam-gia/{id}', 'AdminController@getXoaMaGiamGia')->name('getXoaMaGiamGia');
     });
 
     Route::prefix('quan-ly-nguoi-dung')->group(function () {

@@ -102,9 +102,10 @@
                                                         <p>Mã giảm giá:</p>
                                                         <input type="text" name="magiam"
                                                                value="{{$magiam}}" class="form-control">
-                                                        @if($giatrigiam==0)
+                                                        @if($giatrigiam==0 && strlen($magiam)>0)
                                                             <p>Mã giảm giá không hợp lệ</p>
-                                                        @else
+                                                        @elseif($giatrigiam>0 && strlen($magiam)>0)
+
                                                             <p>Đã áp dụng mã giảm giá thành công</p>
                                                         @endif
                                                         <button type="button" class="button button-search ripple-magic"

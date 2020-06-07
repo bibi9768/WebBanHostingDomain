@@ -83,6 +83,7 @@
                     <h6 class="collapse-header">Quản lý dữ liệu:</h6>
                     <a class="collapse-item" href="{{route('getQuanLyTenMien')}}">Tên miền</a>
                     <a class="collapse-item" href="{{route('getQuanLyHosting')}}">Hosting</a>
+                    <a class="collapse-item" href="{{route('getQuanLyMaGiamGia')}}">Mã Giảm Giá</a>
                     <a class="collapse-item" href="{{route('getQuanLyNguoiDung')}}">Người dùng</a>
                 </div>
             </div>

@@ -6,6 +6,7 @@ use App\Domain;
 use App\HoaDonDomain;
 use App\HoaDonHosting;
 use App\Hosting;
+use App\MaGiamGia;
 use App\Users;
 use Illuminate\Http\Request;
 
@@ -129,6 +130,54 @@ class AdminController extends Controller
     {
         $hosting = Hosting::where('id', $id)->delete();
         return redirect()->route('getQuanLyHosting')->with(['message' => 'Đã xoá một hosting']);
+    }
+
+    public function getQuanLyMaGiamGia()
+    {
+        $magiamgia = MaGiamGia::paginate(10);
+        return view('Admin.quanlymagiamgia', compact('magiamgia'));
+    }
+
+    public function getSuaMaGiamGia($id)
+    {
+        $magiamgia = MaGiamGia::where('id', $id)->first();
+        return view('Admin.suamagiamgia', compact('magiamgia'));
+    }
+
+    public function postSuaMagiamGia(Request $req)
+    {
+        $magiamgia = MaGiamGia::where('id', $req->id)->update([
+            'ma' => $req->ma,
+            'loaiduocgiam' => $req->loai,
+            'trigia' => $req->giabatdautu,
+            'thoihan' => $req->dungluong,
+        ]);
+        return redirect()->route('getQuanLyHosting')->with(['message' => 'Đã cập nhật thông tin hosting']);
+    }
+
+    public function getThemMaGiamGia()
+    {
+        return view('Admin.themmagiamgia');
+    }
+
+    public function postThemMaGiamGia(Request $req)
+    {
+        $hosting = new Hosting();
+        $hosting->tengoi = $req->tengoi;
+        $hosting->loaihosting = $req->loai;
+        $hosting->giabatdautu = $req->giabatdautu;
+        $hosting->dungluong = $req->dungluong;
+        $hosting->bangthong = $req->bangthong;
+        $hosting->website = $req->website;
+        $hosting->phanmemquantri = $req->phanmemquantri;
+        $hosting->save();
+        return redirect()->route('getQuanLyMaGiamGia')->with(['message' => 'Đã thêm mới hosting']);
+    }
+
+    public function getXoaMaGiamGia($id)
+    {
+        $magiamgia = MaGiamGia::where('id', $id)->delete();
+        return redirect()->route('getQuanLyMaGiamGia')->with(['message' => 'Đã xoá một hosting']);
     }
 
     public function getQuanLyNguoiDung()
