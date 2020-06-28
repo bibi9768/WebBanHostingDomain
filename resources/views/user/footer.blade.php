@@ -33,12 +33,12 @@
                         <div class="footer-box">
                             <h3>Thông tin chung</h3>
                             <ul>
-                                <li><a href="gioi-thieu/hostvn.html">Giới thiệu về HTVIETNAM</a></li>
-                                <li><a href="ho-tro/huong-dan-thanh-toan.html">Hướng dẫn thanh toán</a></li>
-                                <li><a href="thong-tin/quy-dinh-su-dung-dich-vu.html">Quy định sử dụng dịch vụ</a></li>
-                                <li><a href="thong-tin/chinh-sach-rieng-tu.html">Chính sách riêng tư</a></li>
-                                <li><a href="quy-dinh-chong-thu-rac.html">Quy định chống thư rác</a></li>
-                                <li><a href="thong-tin/chinh-sach-hoan-tien.html">Chính sách hoàn tiền</a></li>
+                                <li><a href="#">Giới thiệu về HTVIETNAM</a></li>
+                                <li><a href="#">Hướng dẫn thanh toán</a></li>
+                                <li><a href="#">Quy định sử dụng dịch vụ</a></li>
+                                <li><a href="#">Chính sách riêng tư</a></li>
+                                <li><a href="#">Quy định chống thư rác</a></li>
+                                <li><a href="#">Chính sách hoàn tiền</a></li>
                             </ul>
                         </div>
                     </div>
@@ -81,7 +81,7 @@
                 <div class="row">
                     <div class="col-xl-2 col-md-3 col-12">
                         <div class="footer-box">
-                            <img src="{{asset('img/logo-hostvn-white.svg')}}"
+                            <img src="{{asset('img/logo-htvietnam-white.svg')}}"
                                  class="footer-logo">
                         </div>
                     </div>
@@ -180,12 +180,12 @@
                             <i class="icon-old-typical-phone"></i>
                         </p>
                         <p>
-                            <strong>Văn phòng Hà Nội</strong>
-                            <a href="tel:02444553333">024-4455-3333</a>
+                            <strong>Văn phòng Bình DƯơng</strong>
+                            <a href="tel:0943332230">0943332230</a>
                         </p>
                         <p>
                             <strong>Văn phòng TP. Hồ Chí Minh</strong>
-                            <a href="tel:02844553333">028-4455-3333</a>
+                            <a href="tel:0346714040">0346714040</a>
                         </p>
                     </div>
                 </div>
@@ -195,18 +195,11 @@
         <div class="footer-nav-wrap" id="bottomNav">
             <ul class="footer-nav">
                 <li>
-                    <a href="index.html"><i class="icon-home"></i></a>
+                    <a href="{{route('getHomePage')}}"><i class="icon-home"></i></a>
                 </li>
-                <li>
-                    <a href="https://manage.hostvn.net/contact.php" target="_blank"><i class="icon-maps-and-flags"></i></a>
-                </li>
-                <li>
-                    <a href="#"><i class="icon-paper-plane"></i></a>
-                </li>
-                <li>
-                    <a href="https://manage.hostvn.net/cart.php" target="_blank"><i
-                            class="icon-commerce-and-shopping"></i></a>
-                </li>
+{{--                <li>--}}
+{{--                    <a href="#"><i class="icon-paper-plane"></i></a>--}}
+{{--                </li>--}}
                 <li>
                     <a href="#" data-toggle="modal" data-target="#asvCall"><i class="icon-call-answer"></i></a>
                 </li>

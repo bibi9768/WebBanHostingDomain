@@ -50,6 +50,11 @@
                                    value="{{old('email')}}"/>
                         </div>
                         <div class="form-group">
+                            <label for="sodienthoai"><i class="zmdi zmdi-phone"></i></label>
+                            <input type="number" name="sodienthoai" id="sodienthoai" placeholder="Số điện thoại" required
+                                   value="{{old('sodienthoai')}}" min="10"/>
+                        </div>
+                        <div class="form-group">
                             <label for="pass"><i class="zmdi zmdi-lock"></i></label>
                             <input type="password" name="pass" id="pass" placeholder="Mật khẩu" required/>
                         </div>

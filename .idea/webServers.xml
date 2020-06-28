@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="3ee71da5-c4a9-48f7-99b3-bf263970dafc" name="ThienServer" url="http://thienpnh.tk">
+        <fileTransfer rootFolder="/var/www/html/HTVietNam" accessType="SFTP" host="thienpnh.tk" port="22" sshConfigId="efdde0a6-14a8-4c0f-b96d-b7ad5ba9110d" sshConfig="ubuntu@thienpnh.tk:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

@@ -55,12 +55,14 @@ class UserController extends Controller
                 'email' => 'required|email|unique:users,email',
                 'pass' => 'required|min:6|max:20',
                 'hoten' => 'required|max:50',
+                'sodienthoai' => 'required|min:10',
                 'repass' => 'required|same:pass'
             ], [
                 'email.required' => 'Vui lòng nhập email!',
                 'email.email' => 'Không đúng định dạng email',
                 'email.unique' => 'Email đã tồn tại trên hệ thống',
                 'hoten.max' => 'Tên dài quá 50 ký tự',
+                'sodienthoai.min' => 'Số điện thoại ít nhất 10 ký tự',
                 'pass.requied' => 'Vui lòng nhập mật khẩu',
                 'repass.same' => 'Mật khẩu nhập lại không giống',
                 'pass.min' => 'Mật khẩu ít nhất 6 ký tự',
@@ -70,9 +72,15 @@ class UserController extends Controller
         $user->email = $req->email;
         $user->password = bcrypt($req->pass);
         $user->ngaydangky = Carbon::now()->toDateTimeString();
+        $user->sodienthoai = $req->sodienthoai;
         $user->save();
         return redirect()->route('getSignInPage')->with(['message' => 'Tạo tài khoản thành công.Hãy nhập mật khẩu để đăng nhập', 'email' => $user->email]);
+    }
 
+    public function getTrangCaNhanPage()
+    {
+        $user = Users::where('id', Auth::User()->id)->first();
+        return view('user.trangcanhan', compact('user'));
     }
 
     public function getSignOut()
@@ -214,7 +222,7 @@ class UserController extends Controller
         $magiamgia = '';
         $giatrigiam = 0;
         $magiam = '';
-        return view('user.thanhtoandomain', compact('gia', 'quocte', 'vietnam', 'dacbiet', 'tatca', 'domaininfo', 'fulldomain', 'name', 'domain', 'magiamgia','giatrigiam','magiam'));
+        return view('user.thanhtoandomain', compact('gia', 'quocte', 'vietnam', 'dacbiet', 'tatca', 'domaininfo', 'fulldomain', 'name', 'domain', 'magiamgia', 'giatrigiam', 'magiam'));
     }
 
     public function thanhToanTenMienGiamGia($name, $domain, $magiam)
@@ -246,7 +254,7 @@ class UserController extends Controller
         $magiamgia = '';
         $giatrigiam = 0;
         $magiam = '';
-        return view('user.thanhtoanhosting', compact('hosting', 'sothang', 'gia','magiamgia','giatrigiam','magiam'));
+        return view('user.thanhtoanhosting', compact('hosting', 'sothang', 'gia', 'magiamgia', 'giatrigiam', 'magiam'));
     }
 
     public function thanhToanHostingGiamGia($loai, $sothang, $magiam)
@@ -260,7 +268,7 @@ class UserController extends Controller
             $giatrigiam = $magiamgia->trigia;
             $giadagiam = $gia - $gia * $giatrigiam / 100;
         }
-        return view('user.thanhtoanhosting', compact('hosting', 'sothang', 'gia', 'giatrigiam', 'giadagiam', 'gia','magiam'));
+        return view('user.thanhtoanhosting', compact('hosting', 'sothang', 'gia', 'giatrigiam', 'giadagiam', 'gia', 'magiam'));
     }
 
 
