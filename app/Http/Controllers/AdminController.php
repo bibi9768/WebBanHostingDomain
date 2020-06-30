@@ -19,7 +19,19 @@ class AdminController extends Controller
 
     public function getTrangChu()
     {
-        return view('Admin.trangchu');
+        $domain = Domain::all();
+        $hosting = Hosting::all();
+        $countDomainHosting = count($domain) + count($hosting);
+        $giadomain = 0;
+        $giahosting = 0;
+        foreach ($domain as $dm) {
+            $giadomain += $dm->phidangkynamdau;
+        }
+        foreach ($hosting as $ht) {
+            $giahosting += $ht->giabatdautu;
+        }
+        $trigia = $giadomain + $giahosting;
+        return view('Admin.trangchu', compact('countDomainHosting', 'trigia'));
     }
 
     public function getQuanLyHDTenMien()

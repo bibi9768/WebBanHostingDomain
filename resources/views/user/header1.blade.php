@@ -33,11 +33,12 @@
                                                                 <a href="{{route('getDonHangCuaToi')}}"><i
                                                                         class="icon-dollar-symbol"></i><span>Đơn hàng của tôi</span></a>
                                                             </li>
-                                                            <li>
-                                                                <a href="#"><i
-                                                                        class="icon-question-mark"></i><span>Trợ giúp</span></a>
-                                                            </li>
-
+                                                            @if(Auth::User()->laquantri)
+                                                                <li>
+                                                                    <a href="{{route('getTrangChuQuanLy')}}"><i
+                                                                            class="icon-question-mark"></i><span>Quản lý hệ thống</span></a>
+                                                                </li>
+                                                            @endif
                                                             <li>
                                                                 <a href="{{route('getTrangCaNhanPage')}}"><i
                                                                         class="icon-user-shape"></i><span>Chào bạn <b>{{Auth::User()->hoten}}, </b></span></a>
@@ -223,6 +224,8 @@
                                                 </div>
                                                 <div class="col-lg-9 col-md-8 col-7 vertical-center tablet"
                                                      ng-init="domainSearchMobile=false">
+                                                    <a class="menu-icon" href="{{route('getSignInPage')}}"
+                                                       style="width:100%">Đăng nhập</a>
                                                     <div class="center text-align-center">
                                                         <a class="menu-icon" data-toggle="collapse"
                                                            data-target="#navMobile"

@@ -52,7 +52,7 @@ Route::prefix('/web-hosting')->group(function () {
 
 
 Route::prefix('quan-ly')->group(function () {
-    Route::get('/', 'AdminController@getTrangChu')->name('getTrangChu');
+    Route::get('/', 'AdminController@getTrangChu')->name('getTrangChuQuanLy');
     Route::get('/quan-ly-hoa-don-ten-mien', 'AdminController@getQuanLyHDTenMien')->name('getQuanLyHDTenMien');
     Route::get('/quan-ly-hoa-don-hosting', 'AdminController@getQuanLyHDHosting')->name('getQuanLyHDHosting');
 

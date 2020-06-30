@@ -1124,56 +1124,56 @@
             </div>
         </div>
     </section>
-    <section
-        class="elementor-element elementor-element-37d1490 elementor-section-full_width elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section"
-        data-id="37d1490" data-element_type="section">
-        <div class="elementor-container elementor-column-gap-default">
-            <div class="elementor-row">
-                <div
-                    class="elementor-element elementor-element-2346810 elementor-column elementor-col-100 elementor-top-column"
-                    data-id="2346810" data-element_type="column">
-                    <div class="elementor-column-wrap  elementor-element-populated">
-                        <div class="elementor-widget-wrap">
-                            <div
-                                class="elementor-element elementor-element-32b07e4 elementor-widget elementor-widget-product-suggestions"
-                                data-id="32b07e4" data-element_type="widget"
-                                data-widget_type="product-suggestions.default">
-                                <div class="elementor-widget-container">
-                                    <!-- begin suggestions -->
-                                    <div class="main-wrap main-wrap-blue suggestions-wrap"
-                                         style="background-image: url({{asset('img/rocket.png')}}">
-                                        <div class="container">
-                                            <div class="row">
-                                                <div class="col-xl-2 col-lg-12"></div>
-                                                <div class="col-xl-7 col-lg-8 col-md-12 vertical-center">
-                                                    <div class="suggestions-content">
-                                                        <h2>Bạn cần Hosting hiệu năng cao hơn?<br> Thử ngay Cloud VPS
-                                                            SSD.</h2>
-                                                        <p>Máy chủ ảo Cloud công nghệ OpenStack & KVM cho hiệu năng cao
-                                                            hơn<br> với tài nguyên thực. Kích hoạt trong vòng 5 phút,
-                                                            quản lý dễ dàng.</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-xl-3 col-lg-4 col-md-12 vertical-center">
-                                                    <div class="center text-align-right">
-                                                        <button type="button" class="button button-special ripple-magic"
-                                                                onclick="window.location='../cloud/cloud-vps/index.html'">
-                                                            Trải nghiệm ngay <i class="icon-next"></i>
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- end suggestions -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+{{--    <section--}}
+{{--        class="elementor-element elementor-element-37d1490 elementor-section-full_width elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section"--}}
+{{--        data-id="37d1490" data-element_type="section">--}}
+{{--        <div class="elementor-container elementor-column-gap-default">--}}
+{{--            <div class="elementor-row">--}}
+{{--                <div--}}
+{{--                    class="elementor-element elementor-element-2346810 elementor-column elementor-col-100 elementor-top-column"--}}
+{{--                    data-id="2346810" data-element_type="column">--}}
+{{--                    <div class="elementor-column-wrap  elementor-element-populated">--}}
+{{--                        <div class="elementor-widget-wrap">--}}
+{{--                            <div--}}
+{{--                                class="elementor-element elementor-element-32b07e4 elementor-widget elementor-widget-product-suggestions"--}}
+{{--                                data-id="32b07e4" data-element_type="widget"--}}
+{{--                                data-widget_type="product-suggestions.default">--}}
+{{--                                <div class="elementor-widget-container">--}}
+{{--                                    <!-- begin suggestions -->--}}
+{{--                                    <div class="main-wrap main-wrap-blue suggestions-wrap"--}}
+{{--                                         style="background-image: url({{asset('img/rocket.png')}}">--}}
+{{--                                        <div class="container">--}}
+{{--                                            <div class="row">--}}
+{{--                                                <div class="col-xl-2 col-lg-12"></div>--}}
+{{--                                                <div class="col-xl-7 col-lg-8 col-md-12 vertical-center">--}}
+{{--                                                    <div class="suggestions-content">--}}
+{{--                                                        <h2>Bạn cần Hosting hiệu năng cao hơn?<br> Thử ngay Cloud VPS--}}
+{{--                                                            SSD.</h2>--}}
+{{--                                                        <p>Máy chủ ảo Cloud công nghệ OpenStack & KVM cho hiệu năng cao--}}
+{{--                                                            hơn<br> với tài nguyên thực. Kích hoạt trong vòng 5 phút,--}}
+{{--                                                            quản lý dễ dàng.</p>--}}
+{{--                                                    </div>--}}
+{{--                                                </div>--}}
+{{--                                                <div class="col-xl-3 col-lg-4 col-md-12 vertical-center">--}}
+{{--                                                    <div class="center text-align-right">--}}
+{{--                                                        <button type="button" class="button button-special ripple-magic"--}}
+{{--                                                                onclick="window.location='../cloud/cloud-vps/index.html'">--}}
+{{--                                                            Trải nghiệm ngay <i class="icon-next"></i>--}}
+{{--                                                        </button>--}}
+{{--                                                    </div>--}}
+{{--                                                </div>--}}
+{{--                                            </div>--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                    <!-- end suggestions -->--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </section>--}}
     <section
         class="elementor-element elementor-element-aefbc57 elementor-section-full_width elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section"
         data-id="aefbc57" data-element_type="section">
