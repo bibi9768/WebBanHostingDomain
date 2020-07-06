@@ -93,9 +93,9 @@
                     <div class="col-xl-3 col-md-12 vertical-center">
                         <div class="footer-box center connect-us">
                             Kết nối với chúng tôi
-                            <a href="https://www.facebook.com/hostvn.net/"><i
+                            <a href="https://www.facebook.com/ThienIsTheLegend"><i
                                     class="icon-facebook-logo-button social-icon"></i></a>
-                            <a href="https://www.youtube.com/user/HostvnChannel"><i
+                            <a href="https://www.youtube.com/user/bibi9768"><i
                                     class="icon-youtube-symbol social-icon"></i></a>
                         </div>
                     </div>
