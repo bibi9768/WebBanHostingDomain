@@ -109,26 +109,26 @@
                                                                                                     </div>
                                                                                                 </a>
                                                                                             </li>
-                                                                                            <li>
-                                                                                                <a href="{{route('getDonHangCuaToi')}}">
-                                                                                                    <i class="icon-calendar-with-a-clock-time-tools"></i>
-                                                                                                    <div
-                                                                                                        class="menu-text">
-                                                                                                        <h3>Gia hạn tên
-                                                                                                            miền </h3>
-                                                                                                        <br>
-                                                                                                        Được đăng ký bởi
-                                                                                                        HTVIETNAM
-                                                                                                    </div>
-                                                                                                </a>
-                                                                                            </li>
+{{--                                                                                            <li>--}}
+{{--                                                                                                <a href="{{route('getDonHangCuaToi')}}">--}}
+{{--                                                                                                    <i class="icon-calendar-with-a-clock-time-tools"></i>--}}
+{{--                                                                                                    <div--}}
+{{--                                                                                                        class="menu-text">--}}
+{{--                                                                                                        <h3>Gia hạn tên--}}
+{{--                                                                                                            miền </h3>--}}
+{{--                                                                                                        <br>--}}
+{{--                                                                                                        Được đăng ký bởi--}}
+{{--                                                                                                        HTVIETNAM--}}
+{{--                                                                                                    </div>--}}
+{{--                                                                                                </a>--}}
+{{--                                                                                            </li>--}}
                                                                                         </ul>
                                                                                     </div>
                                                                                     <div class="col-md-6 hosta-col">
                                                                                         <h2>Thông tin cần biết</h2>
                                                                                         <ul>
                                                                                             <li>
-                                                                                                <a href="ten-mien.html">
+                                                                                                <a href="{{route('getBangGiaTenMien')}}">
                                                                                                     <i class="icon-magnifier"></i>
                                                                                                     <div
                                                                                                         class="menu-text">

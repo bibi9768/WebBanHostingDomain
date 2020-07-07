@@ -130,7 +130,7 @@
         </div>
     </div>
 </div>
-<script type='text/javascript' src='{{asset('js/postratings-jsc05e.js?ver=1.87')}}'></script>
+{{--<script type='text/javascript' src='{{asset('js/postratings-jsc05e.js?ver=1.87')}}'></script>--}}
 <script type='text/javascript' src='{{asset('js/modules9dff.js?ver=5.3.2')}}'></script>
 <script type='text/javascript' src='{{asset('js/app9dff.js')}}'></script>
 <script type='text/javascript' src='{{asset('js/wp-embed.min9dff.js?ver=5.3.2')}}'></script>
@@ -146,11 +146,6 @@
 
 <script type='text/javascript' src='{{asset('js/frontend.min4dc3.js?ver=2.8.2')}}'></script>
 
-<noscript>
-    <div style="display:inline;">
-        <img height="1" width="1" style="border-style:none;" alt=""
-             src="http://googleads.g.doubleclick.net/pagead/viewthroughconversion/973684836/?value=0&amp;guid=ON&amp;script=0"/>
-    </div>
-</noscript>
+
 </body>
 </html>
