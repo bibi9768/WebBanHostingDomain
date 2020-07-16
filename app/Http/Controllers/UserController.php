@@ -83,6 +83,16 @@ class UserController extends Controller
         return view('user.trangcanhan', compact('user'));
     }
 
+    public function postTrangCaNhanPage(Request $req)
+    {
+        $user = Users::where('email',Auth::User()->email)->first();
+        $user->hoten=$req->hoten;
+        $user->sodienthoai=$req->sodienthoai;
+        $user->diachi=$req->diachi;
+        $user->save();
+        return redirect()->route('getTrangCaNhanPage');
+    }
+
     public function getSignOut()
     {
         Auth::logout();

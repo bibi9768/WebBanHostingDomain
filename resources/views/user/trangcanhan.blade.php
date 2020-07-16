@@ -57,7 +57,7 @@
                                                     <h2 style="text-align: center">THÔNG TIN CÁ NHÂN </h2>
 
                                                     <div class="col-lg-12 text-align-center">
-                                                        <form>
+                                                        <form action="{{route('postTrangCaNhanPage')}}" method="POST">
                                                             @csrf
                                                             <table class="table-2">
                                                                 <tr>
@@ -77,15 +77,15 @@
                                                                 <tr>
                                                                     <td>Số điện thoại</td>
                                                                     <td>
-                                                                        <input class="form-control" name="email"
+                                                                        <input class="form-control" name="sodienthoai"
                                                                                value="{{$user->sodienthoai}}">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>Địa chỉ</td>
                                                                     <td>
-                                                                    <textarea class="form-control" name="email"
-                                                                              value="{{$user->sodienthoai}}"></textarea>
+                                                                    <textarea class="form-control" name="diachi"
+                                                                              value="{{$user->diachi}}"></textarea>
                                                                     </td>
                                                                 </tr>
                                                                 <tr>

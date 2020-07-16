@@ -33,6 +33,7 @@ Route::group(['middleware' => 'checkloggedin'], function () {
         Route::get('/hosting/loaihosting={loai}&sothang={sothang}/magiam={magiam}', 'UserController@thanhToanHostingGiamGia')->name('getThanhToanHosting');
     });
     Route::get('/trang-ca-nhan', 'UserController@getTrangCaNhanPage')->name('getTrangCaNhanPage');
+    Route::post('/trang-ca-nhan', 'UserController@postTrangCaNhanPage')->name('postTrangCaNhanPage');
 });
 
 
