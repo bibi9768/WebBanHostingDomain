@@ -1,5 +1,5 @@
 @extends('Admin.master')
-@section('title','Thêm mới Hosting')
+@section('title','Thêm mới Mã Giảm Giá')
 @section('content')
 
     <div class="container-fluid">

@@ -158,7 +158,7 @@ class AdminController extends Controller
 
     public function postSuaMagiamGia(Request $req)
     {
-        $magiamgia = MaGiamGia::where('id', $req->id)->update([
+        MaGiamGia::where('id', $req->id)->update([
             'ma' => $req->ma,
             'loaiduocgiam' => $req->loaiduocgiam,
             'trigia' => $req->trigia,
@@ -194,5 +194,35 @@ class AdminController extends Controller
         $nguoidung = Users::paginate(10);
         return view('Admin.quanlynguoidung', compact('nguoidung'));
     }
+
+    public function getDatMatKhauNguoiDung($id)
+    {
+        $nguoidung = Users::where('id',$id)->first();
+        return view('Admin.datmatkhau', compact('nguoidung'));
+    }
+
+    public function postDatMatKhauNguoiDung(Request $req)
+    {
+        $nguoidung = Users::where('id',$req->id);
+        $nguoidung->password=bcrypt($req->matkhaumoi);
+        $nguoidung->save();
+        return redirect()->route('getQuanLyNguoiDung');
+    }
+
+    public function getKhoaNguoiDung($id, $statekhoa)
+    {
+        if($statekhoa==1){
+            Users::where('id', $id)->update([
+                'khoa' => 0,
+            ]);
+        }
+        else{
+            Users::where('id', $id)->update([
+                'khoa' => 1,
+            ]);
+        }
+        return redirect()->route('getQuanLyNguoiDung');
+    }
+
 
 }

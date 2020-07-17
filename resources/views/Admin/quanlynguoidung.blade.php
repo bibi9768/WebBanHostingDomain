@@ -44,8 +44,13 @@
                                 </td>
                                 <td>{{$nd->ngaydangky}}</td>
                                 <td>
-                                    <a href="#" class="btn btn-warning ">Đặt mật khẩu</a>
-                                    <a href="#" class="btn btn-danger">Khoá</a>
+                                    <a href="{{route('getDatMatKhauNguoiDung',$nd->id)}}" class="btn btn-warning ">Đặt
+                                        mật khẩu</a>
+                                    @if($nd->khoa==1)
+                                        <a href="{{route('getKhoaNguoiDung',[$nd->id,$nd->khoa])}}" class="btn btn-danger">Mở Khoá</a>
+                                    @else
+                                        <a href="{{route('getKhoaNguoiDung',[$nd->id,$nd->khoa])}}" class="btn btn-primary">Khoá</a>
+                                    @endif
                                 </td>
                             </tr>
                         @endforeach
